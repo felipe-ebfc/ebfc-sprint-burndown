@@ -101,49 +101,12 @@ export default function Home() {
                 style={{ borderLeft: '4px solid #FF6F00' }}
               >
                 <div className="flex items-center justify-center gap-3">
-                  {/* QR Code placeholder - uses inline SVG or image */}
+                  {/* Real QR Code */}
                   <div
                     className="flex-shrink-0 rounded-md overflow-hidden border-2"
                     style={{ borderColor: '#1A237E', width: 80, height: 80 }}
                   >
-                    {/* Inline QR SVG (simplified community QR look) */}
-                    <svg viewBox="0 0 80 80" className="w-full h-full" style={{ background: '#fff' }}>
-                      {/* QR border boxes */}
-                      <rect x="4" y="4" width="24" height="24" fill="none" stroke="#1A237E" strokeWidth="3"/>
-                      <rect x="9" y="9" width="14" height="14" fill="#1A237E"/>
-                      <rect x="52" y="4" width="24" height="24" fill="none" stroke="#1A237E" strokeWidth="3"/>
-                      <rect x="57" y="9" width="14" height="14" fill="#1A237E"/>
-                      <rect x="4" y="52" width="24" height="24" fill="none" stroke="#1A237E" strokeWidth="3"/>
-                      <rect x="9" y="57" width="14" height="14" fill="#1A237E"/>
-                      {/* Center modules */}
-                      <rect x="35" y="4" width="4" height="4" fill="#1A237E"/>
-                      <rect x="42" y="4" width="4" height="4" fill="#1A237E"/>
-                      <rect x="35" y="11" width="4" height="4" fill="#1A237E"/>
-                      <rect x="35" y="18" width="4" height="4" fill="#1A237E"/>
-                      <rect x="42" y="18" width="4" height="4" fill="#1A237E"/>
-                      <rect x="4" y="35" width="4" height="4" fill="#1A237E"/>
-                      <rect x="11" y="35" width="4" height="4" fill="#1A237E"/>
-                      <rect x="18" y="35" width="4" height="4" fill="#1A237E"/>
-                      <rect x="35" y="35" width="4" height="4" fill="#FF6F00"/>
-                      <rect x="42" y="35" width="4" height="4" fill="#1A237E"/>
-                      <rect x="52" y="35" width="4" height="4" fill="#1A237E"/>
-                      <rect x="59" y="35" width="4" height="4" fill="#1A237E"/>
-                      <rect x="35" y="42" width="4" height="4" fill="#1A237E"/>
-                      <rect x="42" y="42" width="4" height="4" fill="#FF6F00"/>
-                      <rect x="52" y="42" width="4" height="4" fill="#1A237E"/>
-                      <rect x="52" y="52" width="4" height="4" fill="#1A237E"/>
-                      <rect x="59" y="52" width="4" height="4" fill="#1A237E"/>
-                      <rect x="66" y="52" width="4" height="4" fill="#1A237E"/>
-                      <rect x="52" y="59" width="4" height="4" fill="#1A237E"/>
-                      <rect x="66" y="59" width="4" height="4" fill="#1A237E"/>
-                      <rect x="52" y="66" width="4" height="4" fill="#1A237E"/>
-                      <rect x="59" y="66" width="4" height="4" fill="#1A237E"/>
-                      <rect x="35" y="52" width="4" height="4" fill="#1A237E"/>
-                      <rect x="35" y="59" width="4" height="4" fill="#1A237E"/>
-                      <rect x="42" y="59" width="4" height="4" fill="#1A237E"/>
-                      <rect x="35" y="66" width="4" height="4" fill="#1A237E"/>
-                      <rect x="42" y="66" width="4" height="4" fill="#FF6F00"/>
-                    </svg>
+                    <img src="/qr-code.png" alt="EBFC Scrum Community QR Code" width={80} height={80} style={{ display: 'block' }} />
                   </div>
                   <div className="text-left">
                     <div className="text-sm font-bold" style={{ color: '#1A237E' }}>
@@ -179,13 +142,13 @@ export default function Home() {
           <div>
             Built with ❤️ by the EBFC Scrum Community ·{' '}
             <a
-              href="https://www.theebfcshow.com/"
+              href="https://store.theebfcshow.com/the-ebfc-show-community"
               target="_blank"
               rel="noopener noreferrer"
               style={{ color: '#FF6F00' }}
               className="hover:underline"
             >
-              theebfcshow.com
+              Join the Community
             </a>
           </div>
           <div className="text-gray-300">EBFC Sprint Burndown v2.0</div>
