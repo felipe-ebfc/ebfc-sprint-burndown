@@ -1,0 +1,122 @@
+@import "tailwindcss";
+
+:root {
+  --ebfc-navy: #1A237E;
+  --ebfc-accent: #FF6F00;
+  --ebfc-accent-hover: #E65100;
+  --ebfc-success: #2E7D32;
+  --ebfc-warning: #F9A825;
+  --ebfc-error: #D32F2F;
+  --ebfc-blue: #1565C0;
+  --bg: #f7f8fa;
+  --card-bg: #fff;
+  --text: #333;
+  --text-light: #888;
+  --border: #e8e8e8;
+  --radius: 10px;
+  --shadow: 0 2px 8px rgba(0,0,0,0.06);
+  --transition: 0.2s ease;
+  --background: var(--bg);
+  --foreground: var(--text);
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Segoe UI', system-ui, -apple-system, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { r: 5; opacity: 1; }
+  50% { r: 8; opacity: 0.7; }
+}
+
+@keyframes drawLine {
+  from { stroke-dashoffset: 2000; }
+  to { stroke-dashoffset: 0; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.point-today {
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+.line-animate {
+  stroke-dasharray: 2000;
+  animation: drawLine 1s ease-out forwards;
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Day pill styles */
+.day-pill {
+  width: 44px;
+  height: 30px;
+  border: 2px solid #d0d0d0;
+  border-radius: 20px;
+  background: #fff;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-light);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition);
+  user-select: none;
+}
+
+.day-pill:hover {
+  border-color: var(--ebfc-accent);
+  color: var(--ebfc-accent);
+}
+
+.day-pill.selected {
+  background: var(--ebfc-navy);
+  color: #fff;
+  border-color: var(--ebfc-navy);
+}
+
+/* Number inputs */
+.day-input {
+  width: 44px;
+  height: 34px;
+  text-align: center;
+  border: 1.5px solid var(--border);
+  border-radius: 6px;
+  font-size: 0.9rem;
+  outline: none;
+  transition: all var(--transition);
+}
+
+.day-input:focus {
+  border-color: var(--ebfc-success);
+  box-shadow: 0 0 0 3px rgba(46,125,50,0.12);
+}
+
+.day-input.today {
+  border-color: var(--ebfc-success);
+  box-shadow: 0 0 0 3px rgba(46,125,50,0.12);
+}
+
+.day-input.past {
+  background: #fafafa;
+  color: #aaa;
+}
+
+.buffer-input.today {
+  border-color: var(--ebfc-blue) !important;
+  box-shadow: 0 0 0 3px rgba(21,101,192,0.12) !important;
+}
+
+@media print {
+  .no-print { display: none !important; }
+  .card { box-shadow: none; border: 1px solid #eee; break-inside: avoid; }
+}
