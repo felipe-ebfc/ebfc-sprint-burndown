@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useCallback } from 'react';
 import { SprintState, SprintHistoryRecord, DEFAULT_STATE } from './types';
-import { STORAGE_KEY, HISTORY_KEY } from './constants';
+import { STORAGE_KEY, HISTORY_KEY, STORAGE_VERSION } from './constants';
 
 function loadStateFromStorage(): SprintState {
   if (typeof window === 'undefined') return DEFAULT_STATE;
@@ -10,6 +10,14 @@ function loadStateFromStorage(): SprintState {
     const raw = localStorage.getItem(STORAGE_KEY);
     if (!raw) return DEFAULT_STATE;
     const parsed = JSON.parse(raw) as SprintState;
+
+    // Version guard: v1 data used "tasks remaining" semantics — incompatible.
+    // Clear and start fresh if we detect old format.
+    if (!parsed.version || parsed.version !== STORAGE_VERSION) {
+      localStorage.removeItem(STORAGE_KEY);
+      return DEFAULT_STATE;
+    }
+
     if (!parsed.bufferValues) {
       parsed.bufferValues = new Array(parsed.selectedDays.length).fill(null);
     }
@@ -54,24 +62,35 @@ export function useSprintState() {
     });
   }, []);
 
+  /**
+   * v2 saveToHistory: dailyValues are "tasks done today"
+   * completed = cumulative sum of all dailyValues
+   * remaining = itemsPlanned + cumScope - completed
+   */
   const saveToHistory = useCallback((s: SprintState) => {
     const totalBuffer = (s.bufferValues || []).reduce((sum: number, v) => sum + (v || 0), 0);
-    let lastVal: number | null = null;
+
+    // Find last day with data
     let lastIdx = -1;
     for (let i = s.dailyValues.length - 1; i >= 0; i--) {
       if (s.dailyValues[i] !== null) {
-        lastVal = s.dailyValues[i];
         lastIdx = i;
         break;
       }
     }
-    // Fix (Critical): same as computeMetrics — only count scope through last day with data
-    const bufferThroughLastDay = lastIdx >= 0
+
+    // Scope added through last day with data
+    const cumScopeAtLastDay = lastIdx >= 0
       ? (s.bufferValues || []).slice(0, lastIdx + 1).reduce((sum: number, v) => sum + (v || 0), 0)
       : 0;
-    const scopeAtLastDay = s.itemsPlanned + bufferThroughLastDay;
-    const adjustedTotal = s.itemsPlanned + totalBuffer; // full total for record-keeping
-    const completed = lastVal !== null ? scopeAtLastDay - lastVal : 0;
+
+    // Cumulative tasks done through last day
+    const completed = lastIdx >= 0
+      ? s.dailyValues.slice(0, lastIdx + 1).reduce((sum: number, v) => sum + (v || 0), 0)
+      : 0;
+
+    const scopeAtLastDay = s.itemsPlanned + cumScopeAtLastDay;
+    const adjustedTotal = s.itemsPlanned + totalBuffer;
     const daysWithData = s.dailyValues.filter(v => v !== null).length;
     const velocity = daysWithData > 0 ? parseFloat((completed / daysWithData).toFixed(1)) : 0;
     const ppc = scopeAtLastDay > 0 ? Math.round((completed / scopeAtLastDay) * 100) : 0;
@@ -99,6 +118,7 @@ export function useSprintState() {
 
   const startSprint = useCallback((itemsPlanned: number, selectedDays: number[]) => {
     setState({
+      version: STORAGE_VERSION,
       started: true,
       itemsPlanned,
       selectedDays,

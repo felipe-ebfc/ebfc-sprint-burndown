@@ -1,6 +1,5 @@
 'use client';
 
-import { useState } from 'react';
 import { useSprintState } from '@/lib/useSprintState';
 import SprintSetupCard from '@/components/SprintSetupCard';
 import BurndownChart from '@/components/BurndownChart';
@@ -20,10 +19,6 @@ export default function Home() {
     updateSprintGoal,
     clearHistory,
   } = useSprintState();
-
-  // Burn-up (tasks completed) = true  |  Burndown (tasks remaining) = false
-  // Default to burn-up mode
-  const [showCompleted, setShowCompleted] = useState(true);
 
   // Don't render until hydrated (avoid SSR mismatch)
   if (!hydrated) {
@@ -81,42 +76,52 @@ export default function Home() {
         {/* ── ACTIVE SPRINT ── */}
         {state.started && (
           <div className="flex gap-3 items-start flex-col lg:flex-row fade-in">
-            {/* Chart column */}
+
+            {/* ── Chart column ── */}
             <div className="flex-1 min-w-0">
+              {/* Chart tile */}
               <div
                 className="bg-white rounded-[10px] p-4 shadow-sm mb-2"
                 style={{ borderLeft: '4px solid #FF6F00' }}
               >
-                <BurndownChart
-                  state={state}
-                  showCompleted={showCompleted}
-                  onToggleMode={() => setShowCompleted(v => !v)}
-                />
-                <DailyInputs
-                  state={state}
-                  onUpdateDaily={updateDailyValue}
-                  onUpdateBuffer={updateBufferValue}
-                  showCompleted={showCompleted}
-                />
+                <BurndownChart state={state} />
 
-                {/* ── Chart Definition Tile ── */}
-                <div
-                  className="mt-4 rounded-lg px-4 py-3"
-                  style={{ background: '#F0F4FF', borderLeft: '3px solid #1A237E' }}
-                >
-                  <p className="text-xs font-bold mb-1" style={{ color: '#1A237E' }}>
-                    {showCompleted ? 'What is a Burn-up Chart?' : 'What is a Burndown Chart?'}
-                  </p>
-                  <p className="text-xs leading-relaxed" style={{ color: '#444' }}>
-                    {showCompleted
-                      ? 'A burn-up chart tracks completed work against total scope. Two lines show progress (green) and scope (red). When they meet, your sprint is done. Scope changes are visible as steps in the red line — making scope creep impossible to hide.'
-                      : 'A burndown chart tracks remaining work over time. The line starts at total planned items and descends toward zero. The ideal line shows the pace needed to finish on time. Below the line means ahead of schedule.'}
-                  </p>
+                {/* ── Two tiles below chart ── */}
+                <div className="flex gap-3 mt-4 flex-col sm:flex-row">
+
+                  {/* LEFT tile: Daily Inputs */}
+                  <div
+                    className="flex-1 rounded-lg px-4 py-3"
+                    style={{ background: '#FAFBFC', border: '1px solid #EEEEEE' }}
+                  >
+                    <DailyInputs
+                      state={state}
+                      onUpdateDaily={updateDailyValue}
+                      onUpdateBuffer={updateBufferValue}
+                    />
+                  </div>
+
+                  {/* RIGHT tile: Burndown explainer */}
+                  <div
+                    className="w-full sm:w-[260px] sm:flex-shrink-0 rounded-lg px-4 py-3"
+                    style={{ background: '#F0F4FF', borderLeft: '3px solid #1A237E' }}
+                  >
+                    <p className="text-xs font-bold mb-1.5" style={{ color: '#1A237E' }}>
+                      What is a Burndown Chart?
+                    </p>
+                    <p className="text-xs leading-relaxed" style={{ color: '#444' }}>
+                      A burndown chart tracks remaining work over time. Enter how many tasks your team completed each day. The line descends toward zero — when it hits bottom, your sprint is done.
+                    </p>
+                    <p className="text-xs leading-relaxed mt-2" style={{ color: '#666' }}>
+                      <span className="font-semibold" style={{ color: '#FF6F00' }}>Scope Added</span> tracks new work added during the sprint.
+                    </p>
+                  </div>
+
                 </div>
               </div>
             </div>
 
-            {/* Summary column */}
+            {/* ── Summary column ── */}
             <div className="w-full lg:w-[300px] lg:min-w-[250px] flex flex-col gap-2">
               <SprintSummaryCard state={state} onUpdateGoal={updateSprintGoal} />
 
@@ -126,7 +131,6 @@ export default function Home() {
                 style={{ borderLeft: '4px solid #FF6F00' }}
               >
                 <div className="flex items-center justify-center gap-3">
-                  {/* Real QR Code */}
                   <div
                     className="flex-shrink-0 rounded-md overflow-hidden border-2"
                     style={{ borderColor: '#1A237E', width: 80, height: 80 }}
@@ -153,6 +157,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
+
           </div>
         )}
 
