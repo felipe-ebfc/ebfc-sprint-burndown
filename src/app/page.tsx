@@ -98,6 +98,21 @@ export default function Home() {
                   onUpdateBuffer={updateBufferValue}
                   showCompleted={showCompleted}
                 />
+
+                {/* ── Chart Definition Tile ── */}
+                <div
+                  className="mt-4 rounded-lg px-4 py-3"
+                  style={{ background: '#F0F4FF', borderLeft: '3px solid #1A237E' }}
+                >
+                  <p className="text-xs font-bold mb-1" style={{ color: '#1A237E' }}>
+                    {showCompleted ? 'What is a Burn-up Chart?' : 'What is a Burndown Chart?'}
+                  </p>
+                  <p className="text-xs leading-relaxed" style={{ color: '#444' }}>
+                    {showCompleted
+                      ? 'A burn-up chart tracks completed work against total scope. Two lines show progress (green) and scope (red). When they meet, your sprint is done. Scope changes are visible as steps in the red line — making scope creep impossible to hide.'
+                      : 'A burndown chart tracks remaining work over time. The line starts at total planned items and descends toward zero. The ideal line shows the pace needed to finish on time. Below the line means ahead of schedule.'}
+                  </p>
+                </div>
               </div>
             </div>
 

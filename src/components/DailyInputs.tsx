@@ -29,7 +29,7 @@ export default function DailyInputs({ state, onUpdateDaily, onUpdateBuffer, show
       {/* Remaining / Done row */}
       <div className="flex items-center gap-2 flex-wrap mb-2">
         <span className="text-[0.7rem] font-semibold text-gray-400 uppercase tracking-wide mr-1 whitespace-nowrap">
-          {showCompleted ? 'Done' : 'Remaining'}
+          {showCompleted ? 'Tasks Done' : 'Remaining'}
         </span>
         <div className="flex gap-1.5 flex-wrap">
           {state.selectedDays.map((dayIndex, i) => {
@@ -87,10 +87,13 @@ export default function DailyInputs({ state, onUpdateDaily, onUpdateBuffer, show
             </span>
             {/* Tooltip */}
             <span
-              className="pointer-events-none absolute bottom-full left-1/2 z-10 mb-1.5 w-56 -translate-x-1/2 rounded-lg px-3 py-2 text-left text-[0.68rem] leading-snug opacity-0 shadow-lg transition-opacity duration-200 group-hover:opacity-100"
+              className="pointer-events-none absolute bottom-full left-1/2 z-10 mb-1.5 -translate-x-1/2 rounded-lg px-3 py-2 text-left text-[0.68rem] leading-snug opacity-0 shadow-lg transition-opacity duration-200 group-hover:opacity-100"
               style={{
                 background: '#1A237E',
                 color: '#fff',
+                whiteSpace: 'normal',
+                maxWidth: '300px',
+                wordWrap: 'break-word',
               }}
             >
               Buffer adds extra capacity to your sprint plan. A 10% buffer on 100 tasks means planning for 110 items — giving your team room for unexpected work without missing the sprint goal.
