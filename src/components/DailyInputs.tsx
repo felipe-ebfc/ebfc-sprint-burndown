@@ -8,6 +8,7 @@ interface Props {
   state: SprintState;
   onUpdateDaily: (idx: number, value: number | null) => void;
   onUpdateBuffer: (idx: number, value: number | null) => void;
+  showCompleted?: boolean;
 }
 
 function getDayClass(state: SprintState, idx: number): string {
@@ -19,16 +20,16 @@ function getDayClass(state: SprintState, idx: number): string {
   return '';
 }
 
-export default function DailyInputs({ state, onUpdateDaily, onUpdateBuffer }: Props) {
+export default function DailyInputs({ state, onUpdateDaily, onUpdateBuffer, showCompleted = false }: Props) {
   const now = new Date();
   now.setHours(0, 0, 0, 0);
 
   return (
     <div className="mt-3">
-      {/* Remaining row */}
+      {/* Remaining / Done row */}
       <div className="flex items-center gap-2 flex-wrap mb-2">
         <span className="text-[0.7rem] font-semibold text-gray-400 uppercase tracking-wide mr-1 whitespace-nowrap">
-          Remaining
+          {showCompleted ? 'Done' : 'Remaining'}
         </span>
         <div className="flex gap-1.5 flex-wrap">
           {state.selectedDays.map((dayIndex, i) => {
@@ -66,8 +67,46 @@ export default function DailyInputs({ state, onUpdateDaily, onUpdateBuffer }: Pr
 
       {/* Buffer row */}
       <div className="flex items-center gap-2 flex-wrap">
-        <span className="text-[0.7rem] font-semibold text-gray-400 uppercase tracking-wide mr-1 whitespace-nowrap">
+        <span className="flex items-center gap-1 text-[0.7rem] font-semibold text-gray-400 uppercase tracking-wide mr-1 whitespace-nowrap">
           Buffer
+          <span
+            className="relative group cursor-default"
+            aria-label="What is buffer?"
+          >
+            <span
+              className="inline-flex items-center justify-center rounded-full text-[0.6rem] font-bold"
+              style={{
+                width: 13,
+                height: 13,
+                background: '#E3F2FD',
+                color: '#1565C0',
+                lineHeight: 1,
+              }}
+            >
+              i
+            </span>
+            {/* Tooltip */}
+            <span
+              className="pointer-events-none absolute bottom-full left-1/2 z-10 mb-1.5 w-56 -translate-x-1/2 rounded-lg px-3 py-2 text-left text-[0.68rem] leading-snug opacity-0 shadow-lg transition-opacity duration-200 group-hover:opacity-100"
+              style={{
+                background: '#1A237E',
+                color: '#fff',
+              }}
+            >
+              Buffer adds extra capacity to your sprint plan. A 10% buffer on 100 tasks means planning for 110 items — giving your team room for unexpected work without missing the sprint goal.
+              {/* Tooltip arrow */}
+              <span
+                className="absolute left-1/2 top-full -translate-x-1/2"
+                style={{
+                  width: 0,
+                  height: 0,
+                  borderLeft: '5px solid transparent',
+                  borderRight: '5px solid transparent',
+                  borderTop: '5px solid #1A237E',
+                }}
+              />
+            </span>
+          </span>
         </span>
         <div className="flex gap-1.5 flex-wrap">
           {state.selectedDays.map((dayIndex, i) => {

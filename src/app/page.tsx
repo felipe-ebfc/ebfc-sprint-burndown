@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import { useSprintState } from '@/lib/useSprintState';
 import SprintSetupCard from '@/components/SprintSetupCard';
 import BurndownChart from '@/components/BurndownChart';
@@ -19,6 +20,10 @@ export default function Home() {
     updateSprintGoal,
     clearHistory,
   } = useSprintState();
+
+  // Burn-up (tasks completed) = true  |  Burndown (tasks remaining) = false
+  // Default to burn-up mode
+  const [showCompleted, setShowCompleted] = useState(true);
 
   // Don't render until hydrated (avoid SSR mismatch)
   if (!hydrated) {
@@ -82,11 +87,16 @@ export default function Home() {
                 className="bg-white rounded-[10px] p-4 shadow-sm mb-2"
                 style={{ borderLeft: '4px solid #FF6F00' }}
               >
-                <BurndownChart state={state} />
+                <BurndownChart
+                  state={state}
+                  showCompleted={showCompleted}
+                  onToggleMode={() => setShowCompleted(v => !v)}
+                />
                 <DailyInputs
                   state={state}
                   onUpdateDaily={updateDailyValue}
                   onUpdateBuffer={updateBufferValue}
+                  showCompleted={showCompleted}
                 />
               </div>
             </div>

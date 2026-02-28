@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo, useState, useEffect, useRef } from 'react';
+import { useMemo, useEffect, useRef } from 'react';
 import confetti from 'canvas-confetti';
 import { SprintState } from '@/lib/types';
 import { DAY_NAMES } from '@/lib/constants';
@@ -8,6 +8,8 @@ import { getTotalBuffer, getAdjustedTotal, getSprintDayDate } from '@/lib/utils'
 
 interface Props {
   state: SprintState;
+  showCompleted: boolean;
+  onToggleMode: () => void;
   onProjectionChange?: (text: string) => void;
 }
 
@@ -182,8 +184,7 @@ export function renderBurndownSVG(
   return { html, projection };
 }
 
-export default function BurndownChart({ state }: Props) {
-  const [showCompleted, setShowCompleted] = useState(false);
+export default function BurndownChart({ state, showCompleted, onToggleMode }: Props) {
 
   // ── Confetti: fire once when sprint hits 0 remaining ──
   const confettiFiredRef = useRef(false);
@@ -256,10 +257,10 @@ export default function BurndownChart({ state }: Props) {
             className="text-xs font-semibold"
             style={{ color: showCompleted ? '#999' : '#1A237E' }}
           >
-            Tasks Remaining
+            Burndown Chart (tasks remaining)
           </span>
           <button
-            onClick={() => setShowCompleted(v => !v)}
+            onClick={onToggleMode}
             role="switch"
             aria-checked={showCompleted}
             className="relative inline-flex items-center rounded-full transition-colors duration-200 focus:outline-none"
@@ -283,7 +284,7 @@ export default function BurndownChart({ state }: Props) {
             className="text-xs font-semibold"
             style={{ color: showCompleted ? '#4CAF50' : '#999' }}
           >
-            Tasks Completed
+            Burn-up Chart (tasks completed)
           </span>
         </div>
       )}
