@@ -56,7 +56,6 @@ export function useSprintState() {
 
   const saveToHistory = useCallback((s: SprintState) => {
     const totalBuffer = (s.bufferValues || []).reduce((sum: number, v) => sum + (v || 0), 0);
-    const adjustedTotal = s.itemsPlanned + totalBuffer;
     let lastVal: number | null = null;
     let lastIdx = -1;
     for (let i = s.dailyValues.length - 1; i >= 0; i--) {
@@ -66,12 +65,16 @@ export function useSprintState() {
         break;
       }
     }
-    const completed = lastVal !== null ? adjustedTotal - lastVal : 0;
+    // Fix (Critical): same as computeMetrics — only count scope through last day with data
+    const bufferThroughLastDay = lastIdx >= 0
+      ? (s.bufferValues || []).slice(0, lastIdx + 1).reduce((sum: number, v) => sum + (v || 0), 0)
+      : 0;
+    const scopeAtLastDay = s.itemsPlanned + bufferThroughLastDay;
+    const adjustedTotal = s.itemsPlanned + totalBuffer; // full total for record-keeping
+    const completed = lastVal !== null ? scopeAtLastDay - lastVal : 0;
     const daysWithData = s.dailyValues.filter(v => v !== null).length;
     const velocity = daysWithData > 0 ? parseFloat((completed / daysWithData).toFixed(1)) : 0;
-    const ppc = adjustedTotal > 0 ? Math.round((completed / adjustedTotal) * 100) : 0;
-
-    void lastIdx;
+    const ppc = scopeAtLastDay > 0 ? Math.round((completed / scopeAtLastDay) * 100) : 0;
 
     const record: SprintHistoryRecord = {
       date: s.startDate || new Date().toISOString().slice(0, 10),

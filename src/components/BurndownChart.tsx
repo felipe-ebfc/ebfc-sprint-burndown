@@ -29,7 +29,9 @@ export function renderBurndownSVG(
   const n = state.selectedDays.length;
   const originalMax = state.itemsPlanned;
   const adjustedMax = getAdjustedTotal(state);
-  const displayMax = Math.max(originalMax, adjustedMax);
+  // Fix (Very Low): ensure displayMax accommodates daily values that exceed planned scope
+  const maxDailyValue = state.dailyValues.reduce<number>((m, v) => Math.max(m, v ?? 0), 0);
+  const displayMax = Math.max(originalMax, adjustedMax, maxDailyValue);
 
   let html = '';
   let projection = '';
@@ -224,19 +226,46 @@ export function renderBurndownSVG(
     html += `<line x1="${ois.x}" y1="${ois.y}" x2="${oie.x}" y2="${oie.y}" stroke="#ccc" stroke-width="2" stroke-dasharray="6,4"/>`;
 
     if (totalBuffer > 0) {
-      const ais = px(0, adjustedMax), aie = px(n, 0);
-      html += `<line x1="${ais.x}" y1="${ais.y}" x2="${aie.x}" y2="${aie.y}" stroke="#E0E0E0" stroke-width="2" stroke-dasharray="6,4"/>`;
-      html += `<text x="${W - pad.right - 5}" y="${ois.y - 8}" text-anchor="end" fill="#ccc" font-size="10">original</text>`;
-      html += `<text x="${W - pad.right - 5}" y="${px(0, adjustedMax).y - 8}" text-anchor="end" fill="#bbb" font-size="10">adjusted</text>`;
+      // Fix (Medium): adjusted ideal anchors at the FIRST day scope was added, not Day 0.
+      // This prevents the false narrative of "we planned this buffer from day one."
+      const firstBufferDayIdx = state.bufferValues.findIndex(v => v !== null && v > 0);
+      if (firstBufferDayIdx >= 0) {
+        const idealAtFirstBuffer = originalMax - (firstBufferDayIdx / n) * originalMax;
+        const adjustedIdealStart = idealAtFirstBuffer + totalBuffer;
+        const ais = px(firstBufferDayIdx, adjustedIdealStart);
+        const aie = px(n, 0);
+        html += `<line x1="${ais.x}" y1="${ais.y}" x2="${aie.x}" y2="${aie.y}" stroke="#E0E0E0" stroke-width="2" stroke-dasharray="6,4"/>`;
+        html += `<text x="${W - pad.right - 5}" y="${ois.y - 8}" text-anchor="end" fill="#ccc" font-size="10">original</text>`;
+        html += `<text x="${ais.x + 4}" y="${ais.y - 6}" fill="#bbb" font-size="10">adjusted</text>`;
+      }
     }
   }
 
-  // Actual remaining line
+  // Fix (Medium): actual line starts at originalMax (not adjustedMax).
+  // When scope is added mid-sprint, the line steps UP at that day — visually
+  // showing "scope was added here" rather than retroactively shifting Day 0.
   const points: { pos: number; val: number }[] = [];
-  points.push({ pos: 0, val: adjustedMax });
+  points.push({ pos: 0, val: originalMax });
+  let runningRemaining = originalMax;
   state.dailyValues.forEach((v, i) => {
+    const bufAdded = state.bufferValues[i] || 0;
     if (v !== null) {
+      if (bufAdded > 0) {
+        // Step UP before the day's work: scope was added, remaining increased
+        points.push({ pos: i + 1, val: runningRemaining + bufAdded });
+      }
       points.push({ pos: i + 1, val: v });
+      runningRemaining = v;
+    }
+  });
+
+  // Fix (Low): scope change markers — vertical annotation at each day where buffer > 0.
+  // This lets users distinguish "team fell behind" from "scope was added."
+  state.bufferValues.forEach((v, i) => {
+    if (v !== null && v > 0) {
+      const markerX = pad.left + ((i + 1) / n) * cw;
+      html += `<line x1="${markerX}" y1="${pad.top}" x2="${markerX}" y2="${H - pad.bottom}" stroke="#FF6F00" stroke-width="1" stroke-dasharray="3,3" opacity="0.45"/>`;
+      html += `<text x="${markerX + 3}" y="${pad.top + 13}" fill="#FF6F00" font-size="9" font-weight="600">+${v} scope</text>`;
     }
   });
 

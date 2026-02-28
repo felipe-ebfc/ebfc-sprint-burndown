@@ -2,7 +2,7 @@
 
 import { SprintState } from '@/lib/types';
 import { DAY_NAMES } from '@/lib/constants';
-import { getSprintDayDate } from '@/lib/utils';
+import { getSprintDayDate, getTotalBuffer } from '@/lib/utils';
 
 interface Props {
   state: SprintState;
@@ -23,6 +23,8 @@ function getDayClass(state: SprintState, idx: number): string {
 export default function DailyInputs({ state, onUpdateDaily, onUpdateBuffer, showCompleted = false }: Props) {
   const now = new Date();
   now.setHours(0, 0, 0, 0);
+  // Fix (Very Low): compute adjustedTotal for input guard — daily values shouldn't exceed scope
+  const adjustedTotal = state.itemsPlanned + getTotalBuffer(state);
 
   return (
     <div className="mt-3">
@@ -51,7 +53,7 @@ export default function DailyInputs({ state, onUpdateDaily, onUpdateBuffer, show
                 <input
                   type="number"
                   min={0}
-                  max={999}
+                  max={adjustedTotal || 999}
                   value={state.dailyValues[i] !== null ? state.dailyValues[i]! : ''}
                   onChange={e => {
                     const val = e.target.value === '' ? null : Math.max(0, parseInt(e.target.value));
@@ -68,18 +70,18 @@ export default function DailyInputs({ state, onUpdateDaily, onUpdateBuffer, show
       {/* Buffer row */}
       <div className="flex items-center gap-2 flex-wrap">
         <span className="flex items-center gap-1 text-[0.7rem] font-semibold text-gray-400 uppercase tracking-wide mr-1 whitespace-nowrap">
-          Buffer
+          Scope Added
           <span
             className="relative group cursor-default"
-            aria-label="What is buffer?"
+            aria-label="What is scope added?"
           >
             <span
               className="inline-flex items-center justify-center rounded-full text-[0.6rem] font-bold"
               style={{
                 width: 13,
                 height: 13,
-                background: '#E3F2FD',
-                color: '#1565C0',
+                background: '#FFF3E0',
+                color: '#FF6F00',
                 lineHeight: 1,
               }}
             >
@@ -96,7 +98,7 @@ export default function DailyInputs({ state, onUpdateDaily, onUpdateBuffer, show
                 wordWrap: 'break-word',
               }}
             >
-              Buffer adds extra capacity to your sprint plan. A 10% buffer on 100 tasks means planning for 110 items — giving your team room for unexpected work without missing the sprint goal.
+              Track scope changes during the sprint. When new work is added mid-sprint, enter it here to keep your chart honest. The burndown line will show a step up on the day scope was added — making it clear whether the team fell behind or scope grew.
               {/* Tooltip arrow */}
               <span
                 className="absolute left-1/2 top-full -translate-x-1/2"
@@ -124,7 +126,7 @@ export default function DailyInputs({ state, onUpdateDaily, onUpdateBuffer, show
                       ? 'text-gray-300'
                       : 'text-gray-400'
                   }`}
-                  style={{ color: dc === 'today' ? '#1565C0' : undefined }}
+                  style={{ color: dc === 'today' ? '#FF6F00' : undefined }}
                 >
                   {DAY_NAMES[dayIndex]}
                 </label>
@@ -142,7 +144,7 @@ export default function DailyInputs({ state, onUpdateDaily, onUpdateBuffer, show
                     onUpdateBuffer(i, val);
                   }}
                   className={`day-input buffer-input ${dc}`}
-                  style={{ borderColor: dc === 'today' ? '#1565C0' : '#E3F2FD' }}
+                  style={{ borderColor: dc === 'today' ? '#FF6F00' : '#FFF3E0' }}
                 />
               </div>
             );

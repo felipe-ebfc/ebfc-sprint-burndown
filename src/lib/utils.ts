@@ -45,10 +45,17 @@ export function computeMetrics(state: SprintState): SprintMetrics {
     }
   }
 
-  const completed = lastVal !== null ? adjustedTotal - lastVal : 0;
+  // Fix (Critical): Only count scope that existed UP TO the last day with data.
+  // If buffer was entered on Day 5 and we only have data through Day 3,
+  // the Day 5 buffer should NOT inflate "completed" — no work has happened there yet.
+  const bufferThroughLastDay = lastIdx >= 0
+    ? (state.bufferValues || []).slice(0, lastIdx + 1).reduce((s: number, v) => s + (v || 0), 0)
+    : 0;
+  const scopeAtLastDay = state.itemsPlanned + bufferThroughLastDay;
+  const completed = lastVal !== null ? scopeAtLastDay - lastVal : 0;
   const daysElapsed = lastIdx + 1;
   const velocity = daysElapsed > 0 && lastVal !== null ? (completed / daysElapsed).toFixed(1) : '—';
-  const ppc = adjustedTotal > 0 && lastVal !== null ? Math.round((completed / adjustedTotal) * 100) : 0;
+  const ppc = scopeAtLastDay > 0 && lastVal !== null ? Math.round((completed / scopeAtLastDay) * 100) : 0;
 
   let status = '—', statusClass = '', statusEmoji = '';
   if (lastVal !== null) {

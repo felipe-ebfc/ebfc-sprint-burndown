@@ -77,7 +77,7 @@ export default function SprintSummaryCard({ state, onUpdateGoal }: Props) {
           <StatItem
             label="Planned"
             value={planDisplay}
-            sub={totalBuffer > 0 ? `${state.itemsPlanned} original + ${totalBuffer} added` : undefined}
+            sub={totalBuffer > 0 ? `${state.itemsPlanned} original + ${totalBuffer} scope added` : undefined}
           />
           <StatItem
             label="Completed"
