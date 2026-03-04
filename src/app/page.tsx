@@ -6,12 +6,19 @@ import BurndownChart from '@/components/BurndownChart';
 import DailyInputs from '@/components/DailyInputs';
 import SprintSummaryCard from '@/components/SprintSummaryCard';
 import SprintHistoryCard from '@/components/SprintHistoryCard';
+import BoardSwitcher from '@/components/BoardSwitcher';
 
 export default function Home() {
   const {
     state,
     history,
     hydrated,
+    boards,
+    activeBoardId,
+    switchBoard,
+    addBoard,
+    removeBoard,
+    renameBoard,
     startSprint,
     newSprint,
     updateDailyValue,
@@ -57,6 +64,16 @@ export default function Home() {
             )}
           </div>
         </div>
+
+        {/* ── BOARD SWITCHER ── */}
+        <BoardSwitcher
+          boards={boards}
+          activeBoardId={activeBoardId}
+          onSwitch={switchBoard}
+          onAdd={addBoard}
+          onRemove={removeBoard}
+          onRename={renameBoard}
+        />
 
         {/* ── SETUP PANEL ── */}
         {!state.started ? (
@@ -181,7 +198,7 @@ export default function Home() {
               Join the Community
             </a>
           </div>
-          <div className="text-gray-300">EBFC Sprint Burndown v2.0</div>
+          <div className="text-gray-300">EBFC Sprint Burndown v2.1 — Multi-Board</div>
         </div>
 
       </div>

@@ -31,3 +31,8 @@ export const DEFAULT_STATE: SprintState = {
   startDate: null,
   sprintGoal: '',
 };
+
+export interface BoardMeta {
+  id: number;
+  name: string;
+}
