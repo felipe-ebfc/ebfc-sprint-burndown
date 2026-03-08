@@ -1,0 +1,4972 @@
+{
+  "_IMPORTANT_INSTRUCTIONS": {
+    "_comment1": "DO NOT REMOVE THIS SECTION - Critical behavior rules for Claude Cowork and Osito",
+    "_comment2": "NEW DAY ROLLOVER: When a new calendar day starts, a new day entry MUST be added with zero points",
+    "_comment3": "Days always start empty - points are only added when Felipe explicitly requests a velocity update",
+    "_comment4": "Both Claude Cowork and Osito can add new day entries proactively at midnight or on first interaction",
+    "_comment5": "Keep velocity-log.md in sync with this JSON file"
+  },
+  "meta": {
+    "version": "1.0",
+    "teamName": "The Changemakers",
+    "lastUpdated": "2026-03-07T19:24:27-08:00",
+    "contributors": {
+      "osito": {
+        "emoji": "\ud83d\udc3b",
+        "label": "Osito",
+        "color": "#8B4513"
+      },
+      "claude": {
+        "emoji": "\ud83e\udd16",
+        "label": "Claude Cowork",
+        "color": "#6366f1"
+      },
+      "felipe": {
+        "emoji": "\ud83d\udc64",
+        "label": "Felipe",
+        "color": "#10b981"
+      },
+      "together": {
+        "emoji": "\ud83e\udd1d",
+        "label": "Together",
+        "color": "#f59e0b"
+      },
+      "vega_titan": {
+        "emoji": "\ud83c\udfd4\ufe0f",
+        "label": "Vega Titan",
+        "color": "#b07acc"
+      },
+      "qwen3_06b": {
+        "emoji": "\u26a1",
+        "label": "Qwen3 Flash",
+        "color": "#38bdf8"
+      },
+      "gemma2_2b": {
+        "emoji": "\ud83c\udfc3",
+        "label": "Gemma2",
+        "color": "#84cc16"
+      },
+      "qwen25_coder": {
+        "emoji": "\ud83d\udcbb",
+        "label": "Qwen Coder",
+        "color": "#3b82f6"
+      },
+      "chatgpt_sara": {
+        "emoji": "\ud83c\udf1f",
+        "label": "SARA",
+        "color": "#ec4899"
+      },
+      "sarah": {
+        "emoji": "\ud83d\udcd0",
+        "label": "Sarah",
+        "color": "#4f46e5"
+      },
+      "ed": {
+        "emoji": "\ud83d\udcca",
+        "label": "Ed",
+        "color": "#dc2626"
+      }
+    }
+  },
+  "days": [
+    {
+      "date": "2026-01-24",
+      "dayName": "Saturday",
+      "tasks": [
+        {
+          "task": "Weekly team retro notes",
+          "who": "claude",
+          "points": 1
+        },
+        {
+          "task": "Client email follow-ups",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Research lean construction frameworks",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Slide deck review for Monday",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Updated project timeline",
+          "who": "claude",
+          "points": 1
+        },
+        {
+          "task": "Expense report submitted",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Calendar cleanup for next week",
+          "who": "felipe",
+          "points": 1
+        }
+      ],
+      "totals": {
+        "osito": 0,
+        "claude": 2,
+        "felipe": 3,
+        "together": 2,
+        "daily": 7
+      },
+      "notes": [
+        "End of week wrap-up",
+        "Started CLAUDE.md daily OS",
+        "Osito not yet on the team"
+      ]
+    },
+    {
+      "date": "2026-01-25",
+      "dayName": "Sunday",
+      "tasks": [
+        {
+          "task": "Morning journal + planning",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Read industry newsletter",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Side project code review",
+          "who": "claude",
+          "points": 1
+        },
+        {
+          "task": "Organize Notion workspace",
+          "who": "together",
+          "points": 1
+        }
+      ],
+      "totals": {
+        "osito": 0,
+        "claude": 1,
+        "felipe": 1,
+        "together": 2,
+        "daily": 4
+      },
+      "notes": [
+        "Light weekend work",
+        "Great recovery day",
+        "Osito not yet on the team"
+      ]
+    },
+    {
+      "date": "2026-01-26",
+      "dayName": "Monday",
+      "tasks": [
+        {
+          "task": "Week ahead planning",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Draft blog post outline",
+          "who": "claude",
+          "points": 1
+        },
+        {
+          "task": "Research AI tools for workflows",
+          "who": "osito",
+          "points": 1
+        }
+      ],
+      "totals": {
+        "osito": 1,
+        "claude": 1,
+        "felipe": 1,
+        "together": 0,
+        "daily": 3
+      },
+      "notes": [
+        "Rest day, minimal tasks"
+      ]
+    },
+    {
+      "date": "2026-01-27",
+      "dayName": "Tuesday",
+      "tasks": [
+        {
+          "task": "BBC-CoP February announcement",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Thursday BBC-CoP session prep (Mural + Teams guidance)",
+          "who": "claude",
+          "points": 1
+        },
+        {
+          "task": "Cancel Wednesday meetings",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Patrick case study \u2014 Descript upload + captions",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Patrick case study \u2014 working title",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Updated profile.md with Osito routine",
+          "who": "claude",
+          "points": 1
+        },
+        {
+          "task": "Created velocity tracking system",
+          "who": "claude",
+          "points": 1
+        },
+        {
+          "task": "Posted TikTok",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "EBFC Part 2 speaker notes + slide enhancements",
+          "who": "claude",
+          "points": 1
+        },
+        {
+          "task": "Updated AI Voice TTS guide for iMessage + Osito",
+          "who": "claude",
+          "points": 1
+        },
+        {
+          "task": "IGLC 1996 research + HBR-style article + Burbank weather",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "LA drive time calculations for Burbank trip",
+          "who": "claude",
+          "points": 1
+        },
+        {
+          "task": "Built Sprint Velocity dashboard",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Sent dashboard screenshot via iMessage",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Set up local dashboard server + shell aliases",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Synced Cowork JSON updates to dashboard",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Evening walk (45 min, 2+ miles)",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Boldt Leader Standard Work update",
+          "who": "felipe",
+          "points": 1
+        }
+      ],
+      "totals": {
+        "osito": 5,
+        "claude": 6,
+        "felipe": 6,
+        "together": 1,
+        "daily": 18
+      },
+      "notes": [
+        "First day of formal velocity tracking in Daily OS",
+        "Established Osito daily routine",
+        "Team name chosen: The Changemakers",
+        "Traveling to Burbank tomorrow"
+      ]
+    },
+    {
+      "date": "2026-01-28",
+      "dayName": "Wednesday",
+      "tasks": [
+        {
+          "task": "Whittier CA jobsite visit \u2014 meet team, BPS support",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Jobsite walk",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "BPS Assessment with PM + Superintendent",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Created Changemakers Trello board",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "PIH recap email draft",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "List of follow-up items from Whittier visit",
+          "who": "claude",
+          "points": 1
+        },
+        {
+          "task": "Rewrote TTS guide \u2014 100% free stack (whisper.cpp + Piper)",
+          "who": "claude",
+          "points": 1
+        },
+        {
+          "task": "Created whisper-caf.sh wrapper for audio transcription",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Configured iMessage includeAttachments + audio pipeline",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Set Edge TTS to 1.3x speed",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Updated speak.py to output MP3 for Spanish",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Diagnosed CAF mime_type transcription gap",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Added date tile to velocity dashboard",
+          "who": "osito",
+          "points": 1
+        }
+      ],
+      "totals": {
+        "osito": 7,
+        "claude": 2,
+        "felipe": 4,
+        "together": 0,
+        "daily": 13
+      },
+      "notes": [
+        "Traveled to Whittier CA for Boldt jobsite BPS implementation support",
+        "Water target achieved",
+        "Not a carnivore day \u2014 carbs at all 3 meals",
+        "No exercise",
+        "6 follow-up items queued in Trello for tomorrow",
+        "Osito built voice skill: whisper.cpp (ears) + Piper/Edge TTS (voice) \u2014 fully local, $0 cost"
+      ]
+    },
+    {
+      "date": "2026-01-29",
+      "dayName": "Thursday",
+      "tasks": [
+        {
+          "task": "Dashboard UX: moved Fresh Day section, 50% height reduction",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Built codex-cli skill",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Set up Daily Morning Brief cron job (5 AM)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Fixed clawdbot cron list CLI bug (job.id \u2192 job.jobId)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Filed GitHub issue openclaw/openclaw#4373",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Built Second Brain Next.js app",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Created second-brain skill",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Backfilled journals (1/27, 1/28, 1/29)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Created concepts: the-changemakers, lean-construction, scrum",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Installed and authenticated gh CLI",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Reviewed overnight dashboard work",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Defined Daily Morning Brief requirements",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Defined Second Brain requirements",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Western PDS Meeting (led)",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "BBC-CoP meeting (led, used Osito's Mural)",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Boldt LeanTakt Alignment Meeting",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Folsom Leadership Meeting",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Guillermo 1:1",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Takt Planning VNC 2.0 Training (listened)",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Lars & Paul Lean Takt Mtg \u2192 call Ariana next",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "BPS Assessment corrections \u2192 Mike/PDS group (Step 1 to OPC, MWR 8-week)",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Email Jameson (cc Alex) BPS assessment + descriptors",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "PIH recap email finalized with Mark Foster input",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Email Anja CBA template",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Scheduled Io/Nico Friday meeting + Io/Kevin/Ariana meeting",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "LCI participation action plan with Tony",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Handled Brooke situation (Doanh/Sutter's, LPS conference)",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "CBA Tabular Method template \u2014 helper text + single example",
+          "who": "claude",
+          "points": 3
+        },
+        {
+          "task": "IGLC34 Paper: LPS + Scrum + AI Integration (draft + revisions)",
+          "who": "together",
+          "points": 5
+        }
+      ],
+      "totals": {
+        "osito": 9,
+        "claude": 3,
+        "felipe": 18,
+        "together": 6,
+        "daily": 36
+      },
+      "notes": [
+        "Built infrastructure that compounds: Morning Brief for daily leverage, Second Brain for persistent knowledge",
+        "Fixed upstream Clawdbot bug and contributed back",
+        "Felipe crushed 14 Trello cards + 4 Osito collaboration tasks",
+        "CBA template ready for Anja",
+        "IGLC34 paper drafted for Guillermo collaboration",
+        "Water + protein on track"
+      ]
+    },
+    {
+      "date": "2026-01-30",
+      "dayName": "Friday",
+      "tasks": [
+        {
+          "task": "Send Guillermo updated AI LPS+Scrum paper (Plagiarism check + Ch.9 Construction Scrum updates)",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Prep and present Field Leadership Monthly meeting \u2014 BPS slide + AI Call to Action (with Brooke)",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Lead EBFC Weekly Scrum",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Attend PDS Google NotebookLM meeting (led by Will L.)",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Attend Kaiser's final Lean Construction training call",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Review AI bot meeting (10am \u2014 Sara, Grant, Amada)",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Installed yt-dlp \u2014 YouTube metadata/transcript extraction tool via Homebrew",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Diagnosed unavailable YouTube video \u2014 Confirmed Jeff Sutherland video (0PVVh_xOfLU) is private/deleted",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Found replacement Jeff Sutherland AI+Scrum videos \u2014 Located 'AI: Your New Agile Teammate' (58 min) + 2 alternatives",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Set up Velocity Dashboard auto-start \u2014 Created LaunchAgent for localhost:8080",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Set up Second Brain auto-start \u2014 Created LaunchAgent for localhost:3000 Next.js service",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Fixed Node.js path issue \u2014 Resolved npm path for LaunchAgent to use correct Cellar location",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Installed Ollama + Qwen 2.5 Coder 7B model",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Installed Qwen3 0.6B model (tiny heartbeat model)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Updated HEARTBEAT.md in workspace",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Defined local LLM strategy \u2014 Ollama + Qwen for heartbeats and small AI tasks",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Tested bilingual voice responses (Spanish/English) via iMessage",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Built Whisper transcription for .caf files",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Installed OpenWakeWord + Picovoice Porcupine SDKs",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Created wake word listener (porcupine_listener.py)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Built local Ollama handler for offline commands",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Downloaded gemma2:2b model for fast local responses",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Added emoji stripping for natural TTS output",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Uninstalled Piper TTS + cleaned up references",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Updated osito-voice SKILL.md with full workflow",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Updated documentation (train_wakewords.md, osito-voice-setup.md)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Added ~/bin to PATH + created osito-listen command",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Created Picovoice config with access key",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Researched OpenClaw heartbeat feature",
+          "who": "claude",
+          "points": 1
+        },
+        {
+          "task": "Researched local LLM options (Ollama, Qwen, DeepSeek, Llama)",
+          "who": "claude",
+          "points": 1
+        },
+        {
+          "task": "Drafted osito-ollama-setup.md with model routing guide",
+          "who": "claude",
+          "points": 1
+        },
+        {
+          "task": "Drafted HEARTBEAT.md for Osito workspace",
+          "who": "claude",
+          "points": 1
+        },
+        {
+          "task": "Researched real-time voice options (Kokoro, wake word)",
+          "who": "claude",
+          "points": 1
+        },
+        {
+          "task": "Drafted osito-voice-setup.md",
+          "who": "claude",
+          "points": 1
+        },
+        {
+          "task": "Video editing",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Posted video on Podia",
+          "who": "felipe",
+          "points": 1
+        }
+      ],
+      "totals": {
+        "osito": 21,
+        "claude": 6,
+        "felipe": 8,
+        "together": 1,
+        "daily": 36
+      },
+      "notes": [
+        "Week wrap-up day",
+        "Local LLMs + voice assistant configured",
+        "Health: \u2705 Water, \u2705 Protein, \u274c No workout"
+      ]
+    },
+    {
+      "_dayRolloverNote": "New day auto-created with zero points - this is correct behavior",
+      "date": "2026-01-31",
+      "dayName": "Saturday",
+      "tasks": [
+        {
+          "task": "Second Brain maintenance: created journal   updated the-changemakers concept",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Processed Cowork card requests (6 EBFC website cards added)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Updated trello.sh: Done cards go to top (preserves chronological order)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Connected Osito to The Changemakers Trello board",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Created trello.sh helper script for API access",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Created LinkedIn post: Last Planner System (with Nano Banana visual)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Fixed velocity dashboard day rollover   added protective comments",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Updated morning brief cron (video verification   calendar   multimedia)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Created YouTube verification script (verify-youtube.sh)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Installed icalBuddy for calendar access",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Generated Saturday morning brief (audio   image   weather)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Post LinkedIn: Last Planner System (Osito drafted)",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Add Lyft receipts + flights to expense report \u2192 submit Friday",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Add Osito and Claude Cowork to Trello board",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Organized TopOne 1T as portable drive (111GB \u2192 15GB, 96GB archived)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Organized EBFC B1T podcast archive drive (664GB consolidated)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Organized Travel 2T external drive (774GB \u2192 9 clean folders)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "EBFC Website: Collect 3-5 testimonials from members",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "EBFC Website: Add member count to hero section",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "EBFC Website: Rewrite headline with emotion",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "EBFC Website: Add Felipe origin story section",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "EBFC Website: Screenshot community interior for landing page",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Run Daily OS - Sprint Planning",
+          "who": "claude",
+          "points": 1
+        },
+        {
+          "task": "Daily OS workflow update (Trello integration added)",
+          "who": "claude",
+          "points": 1
+        },
+        {
+          "task": "Osito Trello setup instructions created",
+          "who": "claude",
+          "points": 1
+        },
+        {
+          "task": "File organization template for Travel 2T drive",
+          "who": "claude",
+          "points": 1
+        },
+        {
+          "task": "Run Daily OS - Sprint Planning (01-31-2026)",
+          "who": "claude",
+          "points": 1
+        }
+      ],
+      "totals": {
+        "osito": 14,
+        "claude": 5,
+        "felipe": 7,
+        "together": 1,
+        "daily": 27
+      },
+      "notes": [
+        "Day just started"
+      ]
+    },
+    {
+      "date": "2026-02-01",
+      "dayName": "Sunday",
+      "tasks": [
+        {
+          "task": "Resolved a Scrum for teens with Go Daddy technical support total time 40 minutes last night and 35 minutes today, Sunday, February 1",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Sign up for April 25 Dry Creek Volunteer Day with Noah for his NHS service hours",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Post LinkedIn: The Changemakers Collaboration Story",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "AGENTS.md \u2192 Outbox",
+          "who": "claude",
+          "points": 1
+        },
+        {
+          "task": "Outlook email skill research \u2192 Outbox",
+          "who": "claude",
+          "points": 1
+        },
+        {
+          "task": "YouTube skill research \u2192 Outbox",
+          "who": "claude",
+          "points": 1
+        },
+        {
+          "task": "Setup Tailscale Remote Dashboard Access - Claude Cowork did research and Felipe Teamed in to implement the actions",
+          "who": "claude",
+          "points": 1
+        },
+        {
+          "task": "Updated Changemakers.md to replace OS daily run",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Used ChatGPT to create .md file for Osito to take weekly social media and generate 5 images, one per day",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Fix Felipe's ask to include voiceplayback on Second Brain (3 hours)",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Fixed Second Brain PlayButton indicators (\u26a1 Instant / \ud83d\udd0a Local)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Generated 5 Scrum for Teens LinkedIn post images (Mon-Fri weekly series)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Generated The Changemakers Jan 31 accomplishments infographic",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Coordinated TTS debugging - delegated to Cowork, implemented fixes",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Daily OS for 02-01-2026",
+          "who": "claude",
+          "points": 1
+        },
+        {
+          "task": "Using Claude Code to humanize how Second Brain files are spoken (2 hour effort)",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Updated velocity instructions for Claude Code",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Created TTS watcher script for auto MP3 generation",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Fixed TTS route (TypeScript char type)",
+          "who": "claude",
+          "points": 1
+        },
+        {
+          "task": "Fixed TTS route (venv Python path)",
+          "who": "claude",
+          "points": 1
+        },
+        {
+          "task": "Merged Changemakers.md from two files",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Set up Second Brain LaunchAgent (port 3001)",
+          "who": "claude",
+          "points": 1
+        },
+        {
+          "task": "Set up Velocity Dashboard LaunchAgent (port 8080)",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "TTS research findings \u2192 Outbox",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Daily Morning Brief for 02-01-2026 (weather, calendar, offers, strategic question)",
+          "who": "osito",
+          "points": 1
+        }
+      ],
+      "totals": {
+        "osito": 4,
+        "claude": 8,
+        "felipe": 6,
+        "together": 7,
+        "daily": 25
+      },
+      "notes": [
+        "Auto-created from Trello sync"
+      ]
+    },
+    {
+      "date": "2026-02-02",
+      "dayName": "Monday",
+      "tasks": [
+        {
+          "task": "Host Vasco on the EBFC Scrum Community of Practice 5:15AM",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Reply to Brian Ross in Podia EBFC Scrum CoP",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Connect with Alfred to voice record his daily reports and eliminate the typing into ACC, also get a workflow for how to get daily stand up meetings recorded via MS Teams",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Prepare Notebook LL Copilot Medium workflow by Will's recommendation",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Attend LCI Boldt Organization Meeting",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "BMS Vision Traction Meeting for PDS Team",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "PDS Working Session on Metrics - attend and contribute",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Call Adam Engstrom Monday to work through same AI transcript workflow as Alfred. He has had issues with AI hallucinations",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Fix log into Milanote",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Send Shaun T safety vids + blooper to [recipient?]",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Equipment Tracking System Update - Distribution Stands Cleanup with Mark Foster",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Send robotics meeting invite to kids for Friday",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Rebuild Daily Morning Brief cron workflow with Osito",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Morning Brief delivered via iMessage",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Fixed Second Brain server   launchd auto-restart",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Generated 2 Nano Banana illustrations",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Established Apple Reminders workflow",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "macOS Mail Skill",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Calendar integration session with Osito",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Morning Brief v2 - Work Windows Format",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Sprint Plan with Osito and Cowork",
+          "who": "claude",
+          "points": 1
+        }
+      ],
+      "totals": {
+        "osito": 8,
+        "claude": 1,
+        "felipe": 10,
+        "together": 2,
+        "daily": 21
+      },
+      "notes": [
+        "Auto-created from Trello sync"
+      ]
+    },
+    {
+      "date": "2026-02-03",
+      "dayName": "Monday",
+      "tasks": [
+        {
+          "task": "Heartbeat: Haiku model   1hr interval",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "NotebookLM Skill: Browser automation for Google NotebookLM",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "2026-02-04 Daily Os",
+          "who": "claude",
+          "points": 1
+        },
+        {
+          "task": "Calendar Protection System: Get to <50% meetings",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Fix: Exec errors forwarding to iMessage",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Phone Skill: Make calls via iPhone Continuity",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Quality Ronnie: Monday testing session",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "MBCC investigate 10 week delay with Ariana",
+          "who": "felipe",
+          "points": 1
+        }
+      ],
+      "totals": {
+        "osito": 6,
+        "claude": 1,
+        "felipe": 1,
+        "together": 0,
+        "daily": 8
+      },
+      "notes": [
+        "Auto-created from Trello sync"
+      ]
+    },
+    {
+      "date": "2026-02-04",
+      "dayName": "Tuesday",
+      "tasks": [
+        {
+          "task": "Morning Brief: Updated cron with audio generation",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Email Summary: Created 5:30 AM cron job (audio-only)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Fixed macOS Mail script for iCloud INBOX",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Desktop cleanup: Removed web-screenshot files",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Updated speak.py output to Claude-Cowork folder",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Trello: VTO Leadership card + ECL Presentation Prep",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Set reminder cron for tonight (calendar invites)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Created Reminders checklist card in Trello",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Meeting with Brian Ross - 6am PST / 9am EST",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Daily OS - Osito Scrum Mastered via Text",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Reminders Completed Feb 4",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "LCI Event: Image Processing Prompt   Oakland Data Extraction",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Product Ideation: 3 Business Ideas (AI-Powered Daily OS top pick)",
+          "who": "together",
+          "points": 1
+        }
+      ],
+      "totals": {
+        "osito": 10,
+        "claude": 0,
+        "felipe": 0,
+        "together": 3,
+        "daily": 13
+      },
+      "notes": [
+        "Morning workflow improvements + Daily OS voice session"
+      ]
+    },
+    {
+      "date": "2026-02-05",
+      "dayName": "Thursday",
+      "tasks": [
+        {
+          "task": "Windows to Mac onboarding with Brooke",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Windows-to-Mac Transition Guide DOCX for Brooke",
+          "who": "claude",
+          "points": 1
+        },
+        {
+          "task": "Create One-Page Flyer for Construction Scrum Book Club Session",
+          "who": "claude",
+          "points": 1
+        },
+        {
+          "task": "Karla Velocity Banking Guide DOCX",
+          "who": "claude",
+          "points": 1
+        },
+        {
+          "task": "Quality Ronnie: Add SharePoint hyperlinks to knowledge base",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Blog Post: Vic Ortiz LPS Deep Dive Series \u2014 Final Draft for Podpage",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Post the Podia Part 3 AI powered Scrum meeting",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Boldt Book Club: Construction Scrum Study - March",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Email the report to the team",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Tried to Upgrade to Opus 4.6",
+          "who": "together",
+          "points": 1
+        }
+      ],
+      "totals": {
+        "osito": 0,
+        "claude": 3,
+        "felipe": 3,
+        "together": 4,
+        "daily": 10
+      },
+      "notes": [
+        "Cowork knocked out 4 deliverables: Brooke Mac guide, Vic Ortiz blog post, Book Club flyer, Karla velocity banking guide"
+      ]
+    },
+    {
+      "date": "2026-02-06",
+      "dayName": "Friday",
+      "tasks": [
+        {
+          "task": "Private Scrum Session with Brian",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "New Linked Post with Opus 4.6 on Goldman Sachs",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Upgraded to Opus 4.6",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Scrum Retro with Patrick",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Post Vic LinkedIn Carosel with Cowork and heavy lift from Osito",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Run EBFC AI-Powered Scrum via Zoom and post to Podia, post update",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Built EBFC Scrum Trello Example LIVE",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Vic Ortiz Landing Page Content",
+          "who": "claude",
+          "points": 1
+        },
+        {
+          "task": "Vic Ortiz Podia Post",
+          "who": "claude",
+          "points": 1
+        },
+        {
+          "task": "Vic Ortiz LinkedIn Carousel (11 slides built with Python/Pillow)",
+          "who": "claude",
+          "points": 1
+        },
+        {
+          "task": "Touchplan Spreadsheet \u2014 New Project Step-by-Step Instructions",
+          "who": "claude",
+          "points": 1
+        },
+        {
+          "task": "ACC Daily Report PDF Limitation Write-up for Leadership",
+          "who": "claude",
+          "points": 1
+        },
+        {
+          "task": "28th LCI Congress \u2014 Contract to Culture Abstract Rewrite",
+          "who": "claude",
+          "points": 1
+        },
+        {
+          "task": "28th LCI Congress \u2014 Beyond IFOA Abstract Rewrite",
+          "who": "claude",
+          "points": 1
+        },
+        {
+          "task": "Published Vic Ortiz Blog Post 1 on theebfcshow.com",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Built The Honey Pot \u2014 Second Brain search dashboard (full-text search, Google-style UI)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Set up Honey Pot as persistent LaunchAgent (auto-start on boot)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Created 5 Second Brain concept files (LPS, morning brief, OpenClaw self-build, EBFC growth, Apple Reminders)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Fixed TTS watcher script (regex bug + markdown-to-speech cleanup)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Generated TTS audio for new concept files",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Installed & configured Gemini API + Nano Banana skill",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Second Brain journal maintenance + concept updates",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Built The Honey Pot \u2014 Second Brain search dashboard",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Set up Honey Pot as persistent LaunchAgent",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Created 5 Second Brain concept files (LPS, morning brief, OpenClaw, EBFC growth, Apple Reminders)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Fixed TTS watcher script (regex bug   markdown cleanup)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Installed and configured Gemini API plus Nano Banana skill",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Second Brain journal maintenance   concept updates",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Touchplan Spreadsheet - New Project Step-by-Step Instructions",
+          "who": "claude",
+          "points": 1
+        },
+        {
+          "task": "28th LCI Congress - Contract to Culture Abstract Rewrite",
+          "who": "claude",
+          "points": 1
+        },
+        {
+          "task": "28th LCI Congress - Beyond IFOA Abstract Rewrite",
+          "who": "claude",
+          "points": 1
+        }
+      ],
+      "totals": {
+        "osito": 13,
+        "claude": 10,
+        "felipe": 5,
+        "together": 3,
+        "daily": 31
+      },
+      "notes": [
+        "Cowork: Vic Ortiz content suite (3), Touchplan instructions, ACC limitation write-up, 2 LCI Congress abstracts",
+        "Osito: Built The Honey Pot search dashboard, 5 concept files, TTS fixes, Nano Banana setup",
+        "Vic Ortiz Blog Post 1 published live",
+        "Velocity audit: removed duplicates from Feb 5, added missing Osito tasks"
+      ]
+    },
+    {
+      "date": "2026-02-07",
+      "dayName": "Saturday",
+      "tasks": [
+        {
+          "task": "Clean Pantry - 6 Hours",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Update Touchplan spreadsheet",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Paid Jeronimo for video editing",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Security Audit \u2014 Deep scan of all skills and scripts",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Trello Creds \u2192 Env Vars (API key/token out of trello.sh into ~/.zshrc)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Nano Banana Security Fixes (removed runtime pip, pinned 27 deps, fixed API key grep)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Duplicate API Key Cleanup (removed bare Gemini key from ~/.zshrc)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "App Ideas for Felipe & Noah (7 concepts + audio summary)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "External Drive Organization (3 drives, 116 EBFC episodes renamed)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "ScrumForTeens.com Refresh Plan (full page-by-page redesign)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Scrum for Teens Asset Reorganization (12 clean folders on Travel 2T)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Mission Control Dashboard (Honey Pot + Second Brain + Velocity + Ops Calendar)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Sprint Burn-Up on Mission Control (actual vs projected, sprint boundaries)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Heartbeat Cleanup (removed Lars email watch + Inbox check)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Scrum for Teens App Card (tag autocomplete UX on Trello)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "OpenClaw Control UI Fix (built missing UI assets, configured gateway)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Trello Creds \u2192 Env Vars",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Nano Banana Security Fixes",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Duplicate API Key Cleanup",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "App Ideas for Felipe and Noah",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "External Drive Organization",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "ScrumForTeens.com Refresh Plan",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Scrum for Teens Asset Reorganization",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Mission Control Dashboard",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Sprint Burn-Up on Mission Control",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Heartbeat Cleanup",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Scrum for Teens App - Tag Autocomplete Card",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "OpenClaw Control UI Fix",
+          "who": "osito",
+          "points": 1
+        }
+      ],
+      "totals": {
+        "osito": 25,
+        "claude": 0,
+        "felipe": 2,
+        "together": 1,
+        "daily": 28
+      },
+      "notes": [
+        "Osito's biggest security + infrastructure day: full audit, cred rotation, dep pinning",
+        "Mission Control dashboard now unifies all dashboards",
+        "Scrum for Teens: website refresh plan + asset reorg complete",
+        "Felipe: rest & recovery day, protein good, water good, carbs over 100g"
+      ]
+    },
+    {
+      "date": "2026-02-08",
+      "dayName": "Sunday",
+      "tasks": [
+        {
+          "task": "Build the Engineered PBS with Osito (MVP)",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Schedule Meeting with Smooth Operators + Opening Ceremony",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Reading the Complete Guide to Claude skills from Anthropic",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "ECL Presentation Prep",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "TLC Document process with Cindy on Contracts Manager per Brooke",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Cancel meetings in conflict with ECL",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Daily OS \u2014 Morning Briefing",
+          "who": "claude",
+          "points": 1
+        },
+        {
+          "task": "TurboTax Business + Personal Checklist",
+          "who": "claude",
+          "points": 1
+        },
+        {
+          "task": "PBS: Policy upload with PDF parsing and drag-drop",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "PBS: Snapshot workflow with portal-matching fields",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "PBS: Death benefit payout and policy deactivation",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "PBS: Osito-estimated illustrations for missing PDFs",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "PBS: Premium payments tab with PUA tracking",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "PBS: debtBlaster HELOC draw period and balloon modeling",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "PBS: Dashboard aggregated CV growth chart by age",
+          "who": "osito",
+          "points": 1
+        }
+      ],
+      "totals": {
+        "osito": 7,
+        "claude": 2,
+        "felipe": 4,
+        "together": 2,
+        "daily": 15
+      },
+      "notes": [
+        "PBS MVP built and iterated throughout the day \u2014 7 Osito feature cards completed",
+        "ECL prep complete, meetings canceled",
+        "Cowork: Daily OS + TurboTax checklist"
+      ]
+    },
+    {
+      "date": "2026-02-09",
+      "tasks": [
+        {
+          "task": "KP Reddy AI Reframe: Construction article + 10min audio",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Morning Brief: Calendar + Email (audio + text)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Daily Sprint Kickoff + 9 Trello meeting cards",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Mike Chiles scheduling analysis (cross-timezone)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "3 Nano Banana images (MBCC site + pull planning boards)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Osito capabilities voice demo for Boldt coworkers",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Subcontract/PO Bot Strategy with Brooke and Sara",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Breakfast in Walnut Creek with Annika and Mike Perry",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "MBCC Weekly Construction Meeting",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Folsom Pull Plan Prep - InTakt vs vPlanner + dry run",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Enhanced PreCon Meeting - Building Enclosure",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Book hotel for ECL - Tue night through Thu morning (Concord area)",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Cancel meetings in conflict with ECL",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "TLC Document process with Cindy on Contracts Manager per Brooke",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Book Mike Chiles meeting (2/19 3pm) + calendar invite",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Save 3 Zoom rooms (EBFC Scrum, EBFC Show, Personal)",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Merge 194 duplicate Apple Contacts (backup + programmatic)",
+          "who": "osito",
+          "points": 1
+        }
+      ],
+      "totals": {
+        "osito": 6,
+        "claude": 0,
+        "felipe": 8,
+        "together": 3,
+        "daily": 17
+      },
+      "points": 17,
+      "dayName": "Monday"
+    },
+    {
+      "date": "2026-02-10",
+      "dayName": "Tuesday",
+      "tasks": [
+        {
+          "task": "Calendar audit \u2014 Monday Feb 16 availability for AI Task Force",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Transcribed 9 ECL Day 2 recordings via whisper-cpp (local)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Schedule Matt Jacobs EBFC Scrum guest coaching \u2014 March 13 noon PT",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Reply to Boldt AI Task Force email \u2014 confirmed noon or 2 PM Monday",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Daily OS",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "ECL Facilitator's Guide \u2014 Transcribe sessions & build guide for March",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "LCI Happy Hour \u2014 Transcribe photos & analyze brainstorm groupings",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "ECL Tuesday",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Production Management tech study - CBA FOR REVIEW",
+          "who": "claude",
+          "points": 1
+        },
+        {
+          "task": "LCI NorCal Mural Board for Lean Happy Hour",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Sweep Boldt inbox \u2014 8,744 unread emails >6mo to Osito Trash",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Sweep EBFC inbox \u2014 2,457 unread emails >6mo to Osito Trash",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Built Osito Sweep & Move email workflow skill",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Connect with Doanh and back out of LPS Conference",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Email Tom Martin \u2014 Request 2025 LCI themes link for comparison",
+          "who": "osito",
+          "points": 1
+        }
+      ],
+      "totals": {
+        "osito": 7,
+        "claude": 1,
+        "felipe": 2,
+        "together": 5,
+        "daily": 15
+      },
+      "notes": [
+        "Auto-created from Trello sync"
+      ]
+    },
+    {
+      "date": "2026-02-11",
+      "dayName": "Wednesday",
+      "tasks": [
+        {
+          "task": "ECL Day 2 Transcription Pipeline",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "ECL Day 2 Facilitator Guide DOCX",
+          "who": "claude",
+          "points": 1
+        },
+        {
+          "task": "Trello Board Sync",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Morning Brief + Email Brief",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "ECL Day 2 Slides .md",
+          "who": "claude",
+          "points": 1
+        },
+        {
+          "task": "Email Brooke to add Kyle Baker to AI Task Force for Western",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "ECL Day 2",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Daily OS by Claude Cowork",
+          "who": "claude",
+          "points": 1
+        },
+        {
+          "task": "ECL Day 2 Voice Recordings \u2014 awaiting transcription",
+          "who": "osito",
+          "points": 1
+        }
+      ],
+      "totals": {
+        "osito": 0,
+        "claude": 0,
+        "felipe": 0,
+        "together": 0,
+        "daily": 0
+      },
+      "notes": [
+        "ECL Day 2 \u2014 Felipe's #1 win",
+        "Strength training day (M/W/F)"
+      ]
+    },
+    {
+      "date": "2026-02-12",
+      "dayName": "Thursday",
+      "tasks": [
+        {
+          "task": "Update Contracts Navigator name to be California Contracts Navigator - update description, this will be for Western Only",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Daily OS",
+          "who": "claude",
+          "points": 1
+        },
+        {
+          "task": "ECL Day 3",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "BuildTrace Meeting",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Future BOP work with Juanita",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "ECL Attendees LinkedIn DOCX \u2014 alphabetically sorted, 5 instructors   23 attendees",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Boldt Site Logistics Map Checklist DOCX \u2014 tier-sorted, colorblind-safe, large checkboxes, single page",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "ECL Day 3 Slides Summary \u2014 all 202 slides processed and placed in Outbox for Osito",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "ECL Attendees LinkedIn Lookup \u2014 searched 23 attendees, found 15 profiles",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "ECL Day 3 Voice Memo Transcription \u2014 9 recordings, ~5.5 hours of audio transcribed",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "ECL Day 3 Facilitator Guide \u2014 draft from transcripts   agenda (pre-slides merge)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "ECL Day 3 Final Facilitator Guide \u2014 full merge of 202 slides   transcripts   agenda (in progress)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "SharePoint-Whiteboard.md \u2014 Future BOP planning session transcription with Juanita",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "ECL Day 3 Audio Recap \u2014 voice summary for Felipe's drive home",
+          "who": "osito",
+          "points": 1
+        }
+      ],
+      "totals": {
+        "osito": 6,
+        "claude": 1,
+        "felipe": 7,
+        "together": 0,
+        "daily": 14
+      },
+      "notes": [
+        "Auto-created from Trello sync"
+      ]
+    },
+    {
+      "date": "2026-02-13",
+      "dayName": "Friday",
+      "tasks": [
+        {
+          "task": "Get LCI Abstracts for Juan, Marie, Sean and Mark in pipeline - tell Nick and follow up with Steve Lind",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Email Folsom Pull Plan Draft to team",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Update Contracts Navigator name to California Contracts Navigator",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "BuildTrace Action Items",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Post February EBFC Craftsmanship Challenge",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "ECL Day 3 Facilitator's Guide \u2014 DOCX Generation",
+          "who": "claude",
+          "points": 1
+        },
+        {
+          "task": "Bookmark Fix \u2014 TOC Internal Links",
+          "who": "claude",
+          "points": 1
+        },
+        {
+          "task": "Heading Style Override Fix",
+          "who": "claude",
+          "points": 1
+        },
+        {
+          "task": "TOC Page Break   Appendix A Emojis",
+          "who": "claude",
+          "points": 1
+        }
+      ],
+      "totals": {
+        "osito": 0,
+        "claude": 4,
+        "felipe": 3,
+        "together": 2,
+        "daily": 9
+      },
+      "notes": [
+        "Auto-created from Trello sync"
+      ]
+    },
+    {
+      "date": "2026-02-14",
+      "dayName": "Saturday",
+      "tasks": [
+        {
+          "task": "Morning Brief (Valentine's Day)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "MiniMax M2.1 Research ",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "YouTube Shorts Workflow Setup",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Livestream Download ",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "3 Teaching Moment Clips Extracted",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Jump-Cut Short Final Edit",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Scrum for Teens LinkedIn Series",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "EBFC Community LinkedIn Series",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "CTA Video Stitching",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "17 RCIA Calendar Events Created",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "RCIA Coordinator Audio Transcription ",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Conference Construction Track Description",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "CTA Selfie Video Recording",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "RCIA Coordinator Audio Recording Provided",
+          "who": "osito",
+          "points": 1
+        }
+      ],
+      "totals": {
+        "osito": 14,
+        "claude": 0,
+        "felipe": 0,
+        "together": 0,
+        "daily": 14
+      },
+      "notes": [
+        "Auto-created from Trello sync"
+      ]
+    },
+    {
+      "date": "2026-02-15",
+      "dayName": "Sunday",
+      "tasks": [
+        {
+          "task": "Validate and prepare for OpenClaw Update",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "LinkedIn content workflow documented",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "YouTube Shorts daily pipeline added to strategy",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Mac Studio cluster guide created",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "EBFC mail rules fixed   newsletter inbox sweep",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Trello/velocity sync env fix (heartbeat-safe)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "OpenClaw updated to v2026.2.15",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Fix Boldt Newsletter rule \u2014 set up server-side in Outlook Web",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Set up Teams call with Guillermo (Berkeley) - Monday afternoon",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Respond to Will's BuildTrace Email",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Submit Expense Report",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Post EBFC and Scrum for Teens on LinkedIn",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "LinkedIn Unicode App",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Email summary of WOG Ops to Brooke and co from Thursday template",
+          "who": "felipe",
+          "points": 1
+        }
+      ],
+      "totals": {
+        "osito": 9,
+        "claude": 0,
+        "felipe": 4,
+        "together": 1,
+        "daily": 14
+      },
+      "notes": [
+        "Auto-created from Trello sync"
+      ]
+    },
+    {
+      "date": "2026-02-16",
+      "dayName": "Monday",
+      "tasks": [
+        {
+          "task": "Update Agile Conference BIO",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Prep and Lead the VNC2.0 team Contract MGMT and Intro to BPS session",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Prepare and participate in the Western AI Task Force",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Update my PDS VTO",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Check in with Brooke",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Send Nick my LCI Congress Update",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Victor Ortiz Interview EBFC Show",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Connect with Kevin Labreque on Cowork and OpenClaw",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Connect Tom Martin, Charlie Vidak & Larry Summerfield for Trades Fair (March)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "LCI Core team- send Tom and Sully Accountability training for early April event",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Fix California Contracts Navigator Knowledge base",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Updated heartbeat interval to 2.5 hours",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "LinkedIn Post Studio \u2014 Archive reset fix",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "LinkedIn Post Studio \u2014 Edit button fix",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "LinkedIn Post Studio \u2014 4 polish fixes",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "LinkedIn Post Studio \u2014 Drag ",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Created overnight task summary document with velocity logging and action items",
+          "who": "claude",
+          "points": 1
+        },
+        {
+          "task": "Created osito-overnight.md",
+          "who": "claude",
+          "points": 1
+        }
+      ],
+      "totals": {
+        "osito": 6,
+        "claude": 2,
+        "felipe": 9,
+        "together": 1,
+        "daily": 18
+      },
+      "notes": [
+        "Auto-created from Trello sync"
+      ]
+    },
+    {
+      "date": "2026-02-17",
+      "dayName": "Tuesday",
+      "tasks": [
+        {
+          "task": "Western Ops Leadership Team Meeting",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "SharePoint Doc Mgmt w/ Juanita \u2014 DONE",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Tools ",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "LCI Abstract Review w/ Stephanie Osbahr",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Master Planning w/ James Pugh (In-Person Oakland)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "WheelOfProgress Interview (Iterate) w/ Thoralf Klatt",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Review Juan Restrepo's LCI abstracts + build abstract submission workflow",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Follow up with Steve Lind re: LCI Abstracts",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "CMIC Standard Operating Procedure",
+          "who": "claude",
+          "points": 1
+        },
+        {
+          "task": "CMIC & Hilti Equipment Deep Research",
+          "who": "claude",
+          "points": 1
+        },
+        {
+          "task": "OpenClaw Message Leak Fix (suppressToolErrors patch)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "MiniMax AI Research Overview",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "LCI Abstract: Stephanie Osbahr Neurodiversity (3 pipeline runs)",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "LCI Abstract: JR IPD Integration (1 of 2)",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "LCI Abstract: JR MBCC Schedule Recovery (2 of 2)",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Voice Memo Transcription Infrastructure (mlx-whisper)",
+          "who": "osito",
+          "points": 1
+        }
+      ],
+      "totals": {
+        "osito": 10,
+        "claude": 2,
+        "felipe": 0,
+        "together": 4,
+        "daily": 16
+      },
+      "notes": [
+        "Auto-created from Trello sync"
+      ]
+    },
+    {
+      "date": "2026-02-18",
+      "dayName": "Wednesday",
+      "tasks": [
+        {
+          "task": "Pay ALL credit card bills today",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Sprint: Enhance Scrum for Teens App \u2014 Weekly Feature Cycle",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "App: Tag autocomplete - tappable tag chips",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Post the felipe@leanebfc.com Google Docs post for the BBC-CoP",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Participate and lead by example in Folsom Big Room",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Contribute to PIH Quaker LeanTakt Meeting",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Cowork is down in the Desktop app and Osito is monitoring the status, it's been failing since last night",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Review Project Plan with Juanita (12-12:30PM)",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Sustaining BPS Discussion Virtual (2-3PM)",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Copilot Working Session at Folsom Big Room In-Person (1-1:50PM)",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Created 7-day learning path Trello cards for Felipe (Days 1-7: Terminal \u2192 Git \u2192 Claude Code)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Fixed Trello label convention \u2014 no label = Felipe",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Added 6 meeting cards to To Do from calendar",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Investigated Claude Cowork outage \u2014 confirmed Anthropic service issue",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Daily OS Changemakers",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Folsom LCI Draft",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Video Caption Pipeline \u2014 TikTok-style active word pop captions",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Reinstalled ffmpeg with full subtitle support (drawtext, ass, subtitles)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Fixed PBS server restart \u2014 killall node   nohup pattern",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Ran LCI Abstract Pipeline on Folsom PreFab draft",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Found Reliable Promises presentation decks for Felipe",
+          "who": "osito",
+          "points": 1
+        }
+      ],
+      "totals": {
+        "osito": 12,
+        "claude": 0,
+        "felipe": 7,
+        "together": 2,
+        "daily": 21
+      },
+      "notes": [
+        "Auto-created from Trello sync"
+      ]
+    },
+    {
+      "date": "2026-02-19",
+      "dayName": "Thursday",
+      "tasks": [
+        {
+          "task": "Global Agile Summit 2026 - Team Awesome!",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "30 Min Meeting \u2014 Pete Oliver-Krueger (Zoom) and Wes White",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Open WebUI   LLM dispatch system   dashboard updates",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Vega Titan naming \u2014 suggested own nickname via Qwen 2.5 14B",
+          "who": "vega_titan",
+          "points": 1
+        },
+        {
+          "task": "Email triage v2 \u2014 improved classification with context",
+          "who": "gemma2_2b",
+          "points": 1
+        },
+        {
+          "task": "Email triage \u2014 classified 14 emails",
+          "who": "qwen3_06b",
+          "points": 1
+        },
+        {
+          "task": "Sign Kaiser Training Letter for Ines Verdun",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Victor Ortiz EBFC Show \u2014 merged 2 interview parts (2h03m)",
+          "who": "vega_titan",
+          "points": 1
+        },
+        {
+          "task": "EBFC Scrum CoP with Mike Chiles",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Folsom Check In (2PM)",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Western Weekly Operations Meeting",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Copilot CoP Meeting",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Vega Titan ffmpeg full build (libass, freetype, fontconfig)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "EBFC Scrum Chiles Method - captioned 1080p video",
+          "who": "chatgpt_sara",
+          "points": 1
+        },
+        {
+          "task": "Victor Ortiz EBFC Show - captioned 1080p video",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Mike Chiles Method blog post written",
+          "who": "chatgpt_sara",
+          "points": 1
+        },
+        {
+          "task": "Mission Control nav logo   home button (all 3 pages)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Felipe AI Partner Demo \u2014 jump cut   captioned 1080p",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "AI Partner inspiration blog post (multi-agent)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "LinkedIn Studio \u2014 wired AI sub-agent pipeline",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "CLI power tools installed (both machines)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Install 6 CLI power tools on Mac Mini   Vega Titan",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "SSH key auth: Mac Mini \u2192 Vega Titan",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Ops Calendar fix: heartbeat   weekly tasks",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Mermaid CLI   BasicTeX installed (both machines)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Chiles Method video: transcript   title   blog post   thumbnail",
+          "who": "chatgpt_sara",
+          "points": 1
+        },
+        {
+          "task": "SoX A/B audio test on Chiles video",
+          "who": "osito",
+          "points": 1
+        }
+      ],
+      "totals": {
+        "osito": 16,
+        "claude": 0,
+        "felipe": 7,
+        "together": 0,
+        "vega_titan": 2,
+        "qwen3_06b": 1,
+        "gemma2_2b": 1,
+        "qwen25_coder": 0,
+        "daily": 27
+      },
+      "notes": [
+        "Auto-created from Trello sync"
+      ]
+    },
+    {
+      "date": "2026-02-20",
+      "dayName": "Friday",
+      "tasks": [
+        {
+          "task": "Mission Control Dashboard \u2014 Overnight Build",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Build Boldly Toolbox \u2014 Schedule Basics (8:30-10:00 AM Teams)",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Timesheet Reminder (1:30 PM Teams)",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "VNC 2.0 Leantakt Meeting (8:00-9:00 AM Teams)",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Post on BBC - COP (6:00-6:25 AM)",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Mission Control CRITIC-REVIEW work updates",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Update Contracts Navigator App knowledge base to point to sub folders individually",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Contracts Navigator Feedback Session (2:00-2:25 PM Teams)",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Sutter Folsom MOB: Interiors Pull Plan IN-PERSON (11AM-1PM Folsom)",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Daily OS",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Sprint 8: Felipe Friendlier (Polish)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Sprint 7: Task Movement   Controls",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Sprint 6: Keyboard Shortcuts   Calendar Polish",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Sprint 5: Memory Redesign   Column Collapse",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Sprint 4: Fill Empty Pages (Critic 6.7\u21927.7)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Sprint 3: Dashboard Density   Auto-refresh",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Sprint 2: Calendar Polish   Dedup",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Sprint 1: Priority Fixes (Critic 6.5\u21927.0)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Enhanced Trello Workflow with Clear Source Attribution",
+          "who": "chatgpt_sara",
+          "points": 1
+        },
+        {
+          "task": "Published and Promoted 'The Chiles Method' Blog Post on LinkedIn",
+          "who": "chatgpt_sara",
+          "points": 1
+        },
+        {
+          "task": "Documented Day 1 & Day 2 Last Planner Training Case Study and Transcripts",
+          "who": "chatgpt_sara",
+          "points": 1
+        },
+        {
+          "task": "Boldt Pull Plan Facilitation Playbook v1 \u2014 First Draft",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Hardened and Deployed IFOA-Aware Contracts Navigator v2.0 Instruction Set",
+          "who": "chatgpt_sara",
+          "points": 1
+        },
+        {
+          "task": "Pull Plan Facilitation Playbook v1 \u2192 DOCX",
+          "who": "claude",
+          "points": 1
+        },
+        {
+          "task": "Sprint 9: Nav Padding   Tools Iframe Integration",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Sprint 10: Critic-Driven Fixes (8 high   6 medium resolved)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Sprint 11: Final Polish   Second Critic Pass",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Team Trading Cards - 7 AI Agent Cards Generated",
+          "who": "osito",
+          "points": 1
+        }
+      ],
+      "totals": {
+        "osito": 14,
+        "claude": 1,
+        "felipe": 7,
+        "together": 2,
+        "daily": 28,
+        "chatgpt_sara": 4
+      },
+      "notes": [
+        "Auto-created from Trello sync"
+      ]
+    },
+    {
+      "date": "2026-02-21",
+      "dayName": "Saturday",
+      "tasks": [
+        {
+          "task": "LinkedIn Birthday Replies \u2014 32 Sent",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Second Brain Overnight   Context Protocol",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Scrum for Teens Cron Fix   Project Move to Osito2T",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Time Machine Daily Backup Setup",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Mission Control UI Polish \u2014 6 Fixes",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Ops Calendar Update \u2014 Time Machine   Scrum for Teens",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Dashboard Team Tile   Portrait Avatars",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Mission Control Sprint \u2014 Osito   Felipe   Ed",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Trello Labels Simplified \u2014 8 Labels Renamed",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Mission Control \u2014 Favicon   Mobile Meta Tags   PWA Basics",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Mission Control \u2014 Tailscale Remote Access",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Velocity Bar Chart Safari Fix \u2014 inline rgba styles",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Sprint A: Velocity Page Unification (burn-up, 7-day bars, projections)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Sprint B: Velocity Desktop-Only Sections (donut, leaderboard, achievements, weekly)",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Sprint C: Eliminate Old Iframe Velocity Dashboard",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Sprint 1: Tools Proxy for Mobile Tailscale Access",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Sprint 2: Native Second Brain Mobile Page with Audio Player",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Mobile Sidebar Cleanup \u2014 Desktop-Only Tools",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Saturday Email Triage \u2014 Classify Boldt + EBFC Inboxes",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Draft LinkedIn Post \u2014 AI Team Birthday Build Session",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Rite of Election check-in 12:45 PM",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Family Ministry \u2014 Rite of Election 1:15 PM",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Qwen Coder Scripts Sprint \u2014 5 dev tools (validate, transform, git-msg, lint, template)",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Role Cards \u2014 JSON + Team Page Integration + Bug Fixes",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Mobile Velocity \u2014 Today Total + UTC Fix + Agent Label Update",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Git Commit \u2014 65 files, full day of Mission Control + tools + Second Brain",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Removed Engineered PBS from Sidebar Nav",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Template Generator for Mission Control",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Code Linting Pre-Build Check",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Git Commit Message Generator",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "JSON Transform Pipeline Utility",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Velocity Data Validation Script",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Velocity Dashboard \u2014 Update Agent Names to Match New Labels",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "SARA \u2014 Backlog Separation Framework (Project vs Team)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Mission Control Spec \u2014 Portable Spec for Rufus",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Mission Control Spec Addendum \u2014 8 Deep Technical Q&A",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "SARA \u2014 MC 2.0 Framework Specification v0.1",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Trello Cleanup \u2014 7 Missing Done Cards with Proper Labels",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "ForSara.md \u2014 3 Blog Draft Compilation (AI Partner + Vic Ortiz + Campaign)",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Honey Pot Search Fix \u2014 Proxy Path Rewriting",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "LinkedIn Studio \u2014 Sprints 1-5 (content ingestion, dedup, preview, config, Ollama)",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Osito Review Tile \u2014 LinkedIn Studio + Mission Control",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Velocity Day Navigation \u2014 Arrow + Today Button",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "ForSara-Metrics.md \u2014 Hard Metrics for Blog",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "LinkedIn Post Studio Polish",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Polish 'The Story of Us' for EBFC Blog or LinkedIn",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "EBFC Content Strategy \u2014 Prioritize 1 Blog Draft",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Mission Control 2.0 Framework Specification v0.1 \u2014 Completed and Delivered",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Velocity Today Total \u2014 UTC Timezone Fix",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Velocity Data Normalization \u2014 Right-Sized Tasks",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "ForSara.md \u2014 3 Blog Draft Compilation",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Lint Fix \u2014 console.log Removal   Bracket Balance",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Team Card Collapse Bug Fix \u2014 Avatar Stays Compact",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Established Clear Backlog Separation for Team-Level and Project-Level Prioritization",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Git Commit \u2014 All Mission Control   Trello   Voice Pipeline Changes",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Mobile Velocity \u2014 Add Today's Total Points",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Role Card",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Sprint 2: Native Second Brain Mobile Page",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Sprint B: Velocity Desktop-Only Sections",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Sprint A: Velocity Page Unification",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Mission Control \u2014 Mobile Polish",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Family Ministry \u2014 Rite of Election 1:15 PM (St. Clare, Roseville)",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Rite of Election check-in 12:45 PM (St. Matthew/St. Mark Room)",
+          "who": "felipe",
+          "points": 1
+        }
+      ],
+      "totals": {
+        "osito": 25,
+        "claude": 0,
+        "felipe": 13,
+        "together": 25,
+        "daily": 63
+      },
+      "notes": [
+        "Auto-created from Trello sync"
+      ]
+    },
+    {
+      "date": "2026-02-22",
+      "dayName": "Sunday",
+      "tasks": [
+        {
+          "task": "LinkedIn Post Studio Polish",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Team Changemakers AI Setup video processing",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Generate JSON templates for CoP leader session tracking",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Vega Titan: New-merged.mp4 \u2014 jump-cut edit   transcribe",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Auto-classify EBFC episode transcripts by topic tag",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Vega Titan \u2192 Mac Mini M4: Transcribe 99 EBFC episodes to .srt",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "\ud83d\udccb Vasco Duarte: EBFC Show Episode Post-Production Checklist",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "S7 E116 Vasco Duarte \u2014 Blog post for Podpage",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "AI Updated Ready, Set, Go Scrum",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "EBFC Vasco Interview \u2014 Podcast Post-Production Workflow",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Start and finish the business taxes",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Built and finalized 2025 Tax Engine VM and clean bookkeeping structure",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Sarah trading card \u2014 gold standard (896x1280)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Sarah added to Mission Control \u2014 dashboard + /team page + Trello integration",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Changemakers Agent Identity Protocol \u2014 7 identity files + AGENTS.md rule",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Trello board audit \u2014 labels fixed, checklists added, cards reorganized",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Podcast production pipeline \u2014 Ed's Lean audit + template Trello card",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Chase 2025 expense classification \u2014 322 transactions, 12 PDFs, 9 tax categories",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "S7 E116 Vasco \u2014 Nano Banana blog header image (1280x720)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Big Mac upskilled \u2014 Homebrew PATH fixed, whisper-cli + ggml-small model installed",
+          "who": "osito",
+          "points": 1
+        }
+      ],
+      "totals": {
+        "osito": 12,
+        "claude": 0,
+        "felipe": 8,
+        "together": 0,
+        "daily": 20
+      },
+      "notes": [
+        "Auto-created from Trello sync"
+      ],
+      "tasksCompleted": 20
+    },
+    {
+      "date": "2026-02-23",
+      "dayName": "Monday",
+      "tasks": [
+        {
+          "task": "Second Brain: Feb 22 Overnight Maintenance   2 New Concepts",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "NotebookLM: 22.9X Case Study Notebook \u2014 Audio   Infographic",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Changemakers Bookkeeping Case Study \u2014 Two Blog Drafts",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Send LeanTakt comments draft pull plan PDF to Boldt-only team and let them know that email summary to team, all members in pull plan get emailed Monday afternoon with draft and notes for what to fix, full transparency of work in progress is IFOA spirit",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "EBFC Content Pipeline \u2014 Blog Drafts   Campaign Brief",
+          "who": "sarah",
+          "points": 1
+        },
+        {
+          "task": "ACC Daily Report Parser v2.2 \u2014 Final Ship Sprint",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Give Alfred his Daily PDF based on his daily Transcript - Teach him how to fish, Bella will help",
+          "who": "ed",
+          "points": 1
+        },
+        {
+          "task": "Changemakers Daily OS \u2014 Systemize it in Trello when I say, \"Let's start the day\"",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Resolved California FTB 3514 Business Code Requirement",
+          "who": "chatgpt_sara",
+          "points": 1
+        },
+        {
+          "task": "Daily OS \u2014 Product Brief   Mission Control Comparison",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "ACC Daily Report Parser v1.2 \u2014 Sprint 1 2 Complete",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "ACC-DCR-Meeting-Parser \u2014 Sprint Work Summary",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "ACC Daily Report: Validate Bella Template and transcript pull transcript Tue, Wed, Thu, Fri",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Trello Bella Card \u2014 Archive Files Downloaded",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Second Brain: Feb 23 Evening Maintenance",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "EBFC Burndown Blog Post   LinkedIn Post Drafted",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "EBFC Sprint Burndown v1.2 \u2014 Sprint Goal   QR Card Redesign",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "EBFC Sprint Burndown - Sprint 4: Layout ",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "EBFC Sprint Burndown - Sprint 3: Brand ",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "EBFC Sprint Burndown - Sprint 2: Feedback ",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "EBFC Sprint Burndown - Sprint 1: The Skeleton",
+          "who": "osito",
+          "points": 1
+        }
+      ],
+      "totals": {
+        "osito": 13,
+        "claude": 0,
+        "felipe": 4,
+        "together": 1,
+        "daily": 21,
+        "sarah": 1,
+        "ed": 1,
+        "chatgpt_sara": 1
+      },
+      "notes": [
+        "Auto-created from Trello sync"
+      ],
+      "tasksCompleted": 0
+    },
+    {
+      "date": "2026-02-24",
+      "dayName": "Tuesday",
+      "tasks": [
+        {
+          "task": "Second Brain \u2014 Feb 23 Overnight Maintenance",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Heartbeat Redesign \u2014 Situational Awareness Layer",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Schedule EBFC Scrum Community Meeting   Build Agenda",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Check In - Folsom",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Built for More: BHM Lunch ",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Business 101 \u2014 Felipe/Larissa",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Western Ops Leadership Team Meeting",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Structured BBC-CoP Copilot Session Plan \u2014 13 Execution Cards",
+          "who": "chatgpt_sara",
+          "points": 1
+        },
+        {
+          "task": "Folsom MOB Field Coordination Huddle",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Build EBFC Scrum Community Meeting  Agenda",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Daily OS Sprint Planning \u2014 Tue Feb 25",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Optimized Heartbeat \u2014 Conversation   Implementation",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "EBFC Scrum Deep Dive \u2014 Scheduled for Fri Feb 27 3PM",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "LeanTakt - Boldt Alignment (Biweekly)-Send Email to Team",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Nat #9: Bottleneck Elimination Protocol",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Nat #8: Gradual API Permission Escalation   Access Registry",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Nat #6: Authenticated vs Informational Command Channels",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Nat #5: Large Work Delegation System \u2014 PRD   Supervise Flow",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Nat #4: Heartbeat Monitoring Long-Running Work \u2014 Self-Healing Loop",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Nat #3: Three-Layer Memory Architecture   Tacit Knowledge Gate",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Nat #2: Nightly Memory Consolidation Cron Job \u2014 2AM daily",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Nat #1: PARA Knowledge System (life/) \u2014 86 files migrated",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Schedule LinkedIn Posts",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Schedule EBFC Scrum Community Meeting",
+          "who": "together",
+          "points": 1
+        }
+      ],
+      "totals": {
+        "osito": 12,
+        "claude": 0,
+        "felipe": 6,
+        "together": 5,
+        "daily": 24,
+        "chatgpt_sara": 1
+      },
+      "notes": [
+        "Auto-created from Trello sync"
+      ]
+    },
+    {
+      "date": "2026-02-25",
+      "dayName": "Wednesday",
+      "tasks": [
+        {
+          "task": "Mission Control \u2014 Calendar Timezone Fix",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Vercel Walkthrough \u2014 Transcribe   Backlog Card",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "BBC-CoP Presentation Workflow \u2014 Mural API   Local Site",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "LinkedIn Studio v2 \u2014 API Integration",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Sprint Goal: Clear Claude Desktop Outbox",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "S4T LinkedIn Posts Scheduled   LinkedIn Studio v2 Built",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "LCI Congress Abstract \u2014 Sutter Folsom Prefab Update",
+          "who": "sarah",
+          "points": 1
+        },
+        {
+          "task": "Folsom LCI Congress Abstract Work Session (12:00-1:00)",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Lockout/Tagout Safety Lunch ",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "AGS-BPS Alignment (11:00-1:00)",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Sutter Folsom Big Room (10:00-12:30)",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Watch Party \u2014 All Employee Broadcast (9:00-12:00)",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Folsom MOB Field Coordination Huddle (9:00 AM)",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "BBC-CoP Mural \u2014 Final Polish (Felipe   Osito)",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Review: Daily OS Product Brief",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Boldt AI Tools \u2014 Doc Processing Bot + LCI Image Processing",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Download LinkedIn Data + EBFC Growth Strategy",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Prep EBFC Burndown Demo \u2014 Talking Points + Sample Data",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Publish Changemakers Bookkeeping Case Study Blog Post",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "S4T K12 Feature \u2014 5-Day LinkedIn Campaign",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "BBC-CoP Site \u2014 Final Polish",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "EBFC Burndown Demo \u2014 Presentation Built",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Velocity Blog Article \u2014 Written + Published",
+          "who": "sarah",
+          "points": 1
+        }
+      ],
+      "totals": {
+        "osito": 10,
+        "claude": 0,
+        "felipe": 7,
+        "together": 4,
+        "daily": 23,
+        "sarah": 2
+      },
+      "notes": [
+        "Auto-created from Trello sync"
+      ]
+    },
+    {
+      "date": "2026-02-26",
+      "dayName": "Thursday",
+      "tasks": [
+        {
+          "task": "EBFC Sprint Burndown \u2014 Vercel Web App Deployed",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Nick-Felipe Bi-Weekly Check-in (9:30-10:00)",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Folsom MOB Leadership Meeting (8:00-8:30)",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Sutter Folsom LeanTakt Closeout (7:00-7:30)",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Submit Timesheet ",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Sutter Folsom MOB \u2014 Baystone PreCon Kickoff (1:00-2:00)",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Custom Domain \u2014 dailyreport.theebfcshow.com \ud83e\udd1d\ud83d\udc3b",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Custom Domain \u2014 burndown.theebfcshow.com",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Legal/Risk Lunch ",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Felipe x AZ catchup \u2014 Adalia (10:00-10:30)",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "ACC Daily Report App \u2192 Vercel Deploy   QC",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "dailyreport.theebfcshow.com \u2014 SSL Live \u2705",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Store Page   Social Links \u2192 Updated to felipe.engineer",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "felipe.engineer \u2014 Personal Brand Site Built   Deployed",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Scrum for Teens \u2192 Vercel Deploy \ud83e\udd1d\ud83d\udc3b",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "CA Contract Navigator (2:00-2:30)",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Project Production Management Lecture (6:00-9:00)",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Write Guillermo's Recommendation Letter on Boldt Letterhead",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Publish Vic Ortiz 'Ten Misconceptions' Blog   LinkedIn Scheduled",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Publish Vic Ortiz 'Ten Misconceptions in Traditional Construction Changed by Lean' Blog Post",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "YouTube Profile \u2192 Updated to felipe.engineer",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "EBFC Victor Episode \u2014 Sponsor Video Mid-Roll Insert",
+          "who": "vega_titan",
+          "points": 1
+        },
+        {
+          "task": "\ud83d\udccb Changemakers Daily OS \u2014 Thu Feb 26",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "S4T Feature: Compact Welcome Screen \u2014 Above the Fold \ud83d\udc3b\ud83d\udc97",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Famous.ai Canceled \u2014 S4T Fully on Vercel",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "S4T Vercel Cutover \u2014 DNS   Supabase   Cron",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "S4T Vercel DNS Cutover \u2014 app.scrumforteens.com LIVE on Vercel",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Victor Ortiz Episode \u2014 Final Edit   Lean Rockstar Award",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Victor Ortiz Episode \u2014 Insert Lean Rockstar Award Video",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Review: Boldt Pull Plan Facilitation Playbook v1",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Review: EBFC AI Partner Inspiration Blog",
+          "who": "chatgpt_sara",
+          "points": 1
+        },
+        {
+          "task": "Review: Boldt Pull Plan Facilitation Playbook v1 \u2014 Ready for Monday",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Send Western Weekly Operations Check-In Email Recap",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "felipeengineer.com \u2192 301 Redirect to felipe.engineer   WordPress Canceled",
+          "who": "osito",
+          "points": 1
+        }
+      ],
+      "totals": {
+        "osito": 16,
+        "claude": 0,
+        "felipe": 15,
+        "together": 1,
+        "daily": 34,
+        "vega_titan": 1,
+        "chatgpt_sara": 1
+      },
+      "notes": [
+        "Cards moved to Feb 25 \u2014 midnight sprint"
+      ]
+    },
+    {
+      "date": "2026-02-27",
+      "dayName": "Friday",
+      "tasks": [
+        {
+          "task": "Citizen Developer Onboarding Session (1:00-2:00 PM)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Insurance Genie ",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "AI Discussion w/ Dennis Hoffman (6:30-7:30 AM)",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "LCI NorCal Half-Day Planning Meeting (8AM-1PM, Walnut Creek)",
+          "who": "chatgpt_sara",
+          "points": 1
+        },
+        {
+          "task": "Big Mac: Deep Dive Video Processing \u2014 Captions   Fade-in",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "felipe.engineer Podcast Link Updated \u2192 theebfcshow.com",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Robotics Team Meeting   6 Calendar Events Created",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "EBFC Scrum Deep Dive \u2014 Burndown Demo   Feb Challenge Winners",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Dennis   Adalia BuildTrace Introduction Email Sent",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Deep Dive Transcript Analysis   March Challenge Draft",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "EBFC Burndown App \u2014 Tasks Done Simplification   Confetti   Ship to Production",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "EBFC LLC Takt Planning Proposal \u2014 Polished   Sent to Guillermo",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "EBFC LLC Logos \u2014 5 Options   Final Selected (Option 4)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "PPC% Tracker Built   Deployed to Vercel",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "EBFC AI Research \u2014 White-Label OpenClaw for Construction",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "29 Marketing Skills Installed (coreyhaines31/marketingskills)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "4 Brand Kits Built   Deployed to Vercel",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Send Dennis Hoffman EBFC Scrum Community Link   Bill Trace Invite for Dennis ",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Osito: EBFC Sprint Burndown App \u2014 Feature Update from Deep Dive",
+          "who": "sarah",
+          "points": 1
+        },
+        {
+          "task": "Vega Titan: EBFC Burndown Deep Dive Video Processing",
+          "who": "vega_titan",
+          "points": 1
+        },
+        {
+          "task": "\ud83d\udccb Changemakers Daily OS \u2014 Fri Feb 27",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Respond to Guillermo's EBMOD proposal",
+          "who": "sarah",
+          "points": 1
+        }
+      ],
+      "totals": {
+        "osito": 15,
+        "claude": 0,
+        "felipe": 3,
+        "together": 0,
+        "daily": 22,
+        "chatgpt_sara": 1,
+        "sarah": 2,
+        "vega_titan": 1
+      },
+      "notes": [
+        "Auto-created from Trello sync"
+      ]
+    },
+    {
+      "date": "2026-02-28",
+      "dayName": "Saturday",
+      "tasks": [
+        {
+          "task": "YouTube Content Vault \u2014 631 Videos Cataloged",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "S4T Sprint Retrospective   Achievements System \u2014 Shipped to Production",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "EBFC AI LinkedIn Company Page \u2014 Finish Setup",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Changemakers Daily OS \u2014 Sat Feb 28",
+          "who": "osito",
+          "points": 1
+        }
+      ],
+      "totals": {
+        "osito": 1,
+        "claude": 0,
+        "felipe": 0,
+        "together": 3,
+        "daily": 4
+      },
+      "notes": [
+        "Auto-created from Trello sync"
+      ]
+    },
+    {
+      "date": "2026-03-01",
+      "dayName": "Sunday",
+      "tasks": [
+        {
+          "task": "LinkedIn Post Queue \u2014 150 Posts from YouTube (Sarah)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "March Challenge \u2014 Polish Draft for Morning Ship (Sarah)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "YouTube Content Audit \u2014 Full Transcript Analysis (Sarah)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "MarkItDown   youtube-transcript-api   TikTok Pipeline Installed",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "EBFC AI PRD \u2014 Fresh TTS Voice Message",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Chief Engineer LinkedIn Position \u2014 Drafted by Sarah",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "EBFC AI Advisory Board \u2014 Planned   Documented",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Tool-Shaped Objects \u2014 Hard Rule Added",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Cialdini 6 Principles of Persuasion \u2014 Transcribed   Integrated",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Research: NotebookLM Workflow Improvement (from X/Twitter)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "EBFC AI Brand Kit \u2014 Deploy to Vercel",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "YouTube Transcription Batch \u2014 Top 10 Videos (Vega Titan)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "YouTube Content Goldmine \u2014 631 Video Repurposing Pipeline",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "NotebookLM Skill Update \u2014 New Output Types",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Brandon Choate \u2014 Copilot Session   EBFC AI VOC #1",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Add Chief Engineer Position to LinkedIn Profile",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Watch Julian Goldie NotebookLM   Gemini Course",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "NotebookLM Notebook-from-Documents Pipeline",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "March Challenge \u2014 Ship to Podia   Email Blast",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "March Challenge \u2014 Burn It Down \ud83d\udd25 Ship to Podia",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "NotebookLM \u2014 Safety Meeting Content Generator",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "NotebookLM \u2014 Bid Package Research Notebooks",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "NotebookLM \u2014 Construction Document Audio Briefs",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Changemakers Daily OS \u2014 Sun Mar 1",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Sunday LinkedIn Prep \u2014 Sequence 10 Posts for Week",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "YouTube Transcript Recovery \u2014 Retry Pulls",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Claude Code \u2014 7 MCP Servers Configured",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "S4T K12 Campaign \u2014 5 Nano Banana Images Generated",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "LinkedIn \u2014 15 Posts Manually Scheduled",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "PPC% Tracker \u2014 Viewport Fit Refactor",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "PPC% Tracker \u2014 Bulk Paste   2-Column Layout",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "LinkedIn Studio \u2014 Image Pairing Fixed",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "NotebookLM \u2014 Construction Scrum Deep Research Sources Imported",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "NotebookLM \u2014 S4T Deep Research Sources Imported",
+          "who": "osito",
+          "points": 1
+        }
+      ],
+      "totals": {
+        "osito": 33,
+        "claude": 0,
+        "felipe": 0,
+        "together": 1,
+        "daily": 34
+      },
+      "notes": [
+        "Auto-created from Trello sync"
+      ]
+    },
+    {
+      "date": "2026-03-02",
+      "dayName": "Monday",
+      "tasks": [
+        {
+          "task": "Deep Work Research Paper Rewriting (11:00-12:00)",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "VOC #3 \u2014 Colleen O'Neil Murphy LinkedIn Lead",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "OpenClaw Device Token Fix",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "First Twitter Post \u2014 AI Brand Statement",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "OpenClaw Nemo Setup Guide Written",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Degenkolb Lean 101 Delivered",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "EBFC LLC Takt Proposal Sent to EBMUD",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Open Brain Video Analysis \u2014 Nate B Jones Transcript",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Local LLM Research \u2014 M5 MacBook Pro 28GB",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "OpenClaw Vision Research \u2014 3 Capabilities Documented",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Community Intelligence Report \u2014 60 Testimonials   3 VOC",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Boldt NotebookLM Trainer \u2014 Presentation for PDS Team",
+          "who": "osito",
+          "points": 1
+        }
+      ],
+      "totals": {
+        "osito": 11,
+        "claude": 0,
+        "felipe": 1,
+        "together": 0,
+        "daily": 12
+      },
+      "notes": [
+        "Auto-created from Trello sync"
+      ]
+    },
+    {
+      "date": "2026-03-03",
+      "dayName": "Tuesday",
+      "tasks": [
+        {
+          "task": "Meet with Guillermo for LPS Scrum IGLC Paper working session",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Daily OS Sprint Planning \u2014 Mar 2",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Open Brain \u2014 Vector Memory System",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Multi-Board Burndown \u2014 3-4 Charts Per User",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Review: Folsom LPS Interiors Pull Plan Case Study",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "EBFC AI Business Model   Capacity Analysis",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Cron Job Audit   Cleanup",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Waitlist Sync Script \u2014 Python OAuth to Google Sheets",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "EBFC AI Reshare Plan for Monday 8:30 AM",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Claude Brain Storming Session \u2014 Tue Mar 3 @ 8 AM",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "LCI SoCal CoP Webinar - March 3 @ 11:30 AM",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Open Brain \u2014 Wiring Complete, Infrastructure Live",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Boldt NotebookLM Trainer \u2014 Presentation for PDS Team",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Scrum-Powered Takt Learning Session",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "BPS - Production Tech CBA Progress Review",
+          "who": "claude",
+          "points": 1
+        },
+        {
+          "task": "Western Ops Leadership Team Meeting",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Robotics Team Meeting \u2014 8 PM",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "Folsom LCI   Stephanie LCI Abstracts \u2014 3 PM",
+          "who": "claude",
+          "points": 1
+        },
+        {
+          "task": "Nick/Felipe/Ariana Bi-weekly Check-in \u2014 1:30 PM",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "LeanTakt-Boldt Alignment \u2014 9 AM",
+          "who": "felipe",
+          "points": 1
+        },
+        {
+          "task": "EBFC AI \u2014 White-Label OpenClaw for Construction (Research Phase)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Community Q",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Podia Post   ICS: Lean Deep Dive \u2014 Thursday Mar 5 @ 11 AM",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Podia Post: Multi-Board Burndown Feature (Dennis H.)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Karla & Felipe Catch Up (Folsom)",
+          "who": "felipe",
+          "points": 1
+        }
+      ],
+      "totals": {
+        "daily": 25,
+        "felipe": 7,
+        "osito": 16,
+        "claude": 2
+      },
+      "notes": [
+        "Auto-created from Trello sync"
+      ]
+    },
+    {
+      "date": "2026-03-04",
+      "dayName": "Wednesday",
+      "tasks": [
+        {
+          "task": "Enable OpenClaw Image Understanding",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "SARA: 375K YouTube Content (LinkedIn, Twitter, YouTube)",
+          "who": "chatgpt_sara",
+          "points": 1
+        },
+        {
+          "task": "Scrum for Teens: Achievement System Overhaul (3 Sprints)",
+          "who": "osito",
+          "points": 1
+        }
+      ],
+      "totals": {
+        "osito": 2,
+        "claude": 0,
+        "felipe": 0,
+        "together": 0,
+        "daily": 3,
+        "chatgpt_sara": 1
+      },
+      "notes": [
+        "Auto-created from Trello sync"
+      ]
+    },
+    {
+      "date": "2026-03-05",
+      "dayName": "Thursday",
+      "tasks": [
+        {
+          "task": "BETA-DECISIONS.md   SOUL.md   AGENTS.md for EBFC AI",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "EBFC AI Sprint 1 2 \u2014 Auto-Auth   Branding Layer Shipped",
+          "who": "ed",
+          "points": 1
+        },
+        {
+          "task": "EBFC AI Front of House Plan \u2014 Ed Sarah (1455 lines, 6 sprints)",
+          "who": "sarah",
+          "points": 1
+        },
+        {
+          "task": "Travel Calendar \u2014 Annika SFO   Walnut Creek   Aloft",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Voice Memos Transcribed \u2014 BPS Survey   Brandon Copilot Session",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Changemakers Protocol Update \u2014 Kimi K2.5 Tool-Use Fix",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "LCI Abstract Submission \u2014 Favor for Colleague",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Ed: ingest.ebfc.ai UI Redesign \u2014 3-Column Dashboard",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "EBFC Scrum Community Meeting \u2014 Calendar Events",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Facilitation Agendas   Agile Summit Speakers File",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "gws CLI Installed   Authenticated",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Front of House \u2014 GitHub   Vercel CDN",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "EBFC AI Orchestrator Script",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Supabase Provisioning Tables \u2014 intakes   provision_queue",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Construction Domain Brain Seed \u2014 NotebookLM   Pipeline",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "EBFC AI Sprint 3 \u2014 Open Brain Memory LIVE",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Open Brain Inbox   Cloud Ingestion Pipeline",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Changemakers Daily OS \u2014 Thu Mar 5",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "OpenClaw Fork \u2014 3 Patches Built   Deployed (v2026.3.3)",
+          "who": "osito",
+          "points": 1
+        }
+      ],
+      "totals": {
+        "osito": 17,
+        "claude": 0,
+        "felipe": 0,
+        "together": 0,
+        "daily": 19,
+        "ed": 1,
+        "sarah": 1
+      },
+      "notes": [
+        "Auto-created from Trello sync"
+      ]
+    },
+    {
+      "date": "2026-03-06",
+      "dayName": "Friday",
+      "tasks": [
+        {
+          "task": "Email Speaker Invites \u2014 Agile Summit Construction Track",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "PIH Whittier BPS Assessment \u2014 Facilitated   Analyzed",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Customer Journey Analysis \u2014 Intake to First AI Response",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Fix 3 Onboarding Blockers   Welcome Email",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Second Brain Auto-Consolidation",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Email Drafting Queue with Approval Flow",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Velocity Dashboard v2 \u2014 Live Auto-Updating",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Trello CLI Improvements",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "OpenClaw Fork CI/CD \u2014 Auto-Patch Workflows",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "YouTube Transcript to Blog Post Pipeline",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "NotebookLM Batch Pipeline",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Auto-Backup User Brains (Daily)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Brain Stats Dashboard",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Health Monitor   Auto-Restart LaunchAgent",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Google Chat Bot \u2014 Pre-Built Integration",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Multi-Tenant Schema Routing (RLS)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Wire Open Brain into EBFC AI Container",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Brandon Copilot Coaching \u2014 Record   Transcribe",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "Global Agile Summit 2026 \u2014 Record Construction Track Speaker Session",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Multi-Tenant Wildcard Proxy (Caddy   *.ebfc.ai)",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Vercel Glue \u2014 Zero-Touch Onboarding Pipeline",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "notify-osito.sh \u2014 Triple Notification Script",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Provision Watcher \u2014 DRY_RUN Disabled",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "ppc.theebfcshow.com \u2014 Custom Domain Live",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Google Calendar API Enabled",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "VOC #001 \u2014 Onboarding Walkthrough",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Intake Form \u2014 Progress Indicator   Onboarding Prompts",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "EBFC AI Tagline \u2014 Your AI companion. Your context. Your memory.",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "PPC Dashboard Layout   Font Audit",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "PPC Simple Mode \u2014 Daily PPC   LCI Variance",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "PPC Tracker v2 \u2014 World-Class Redesign Merged",
+          "who": "together",
+          "points": 1
+        },
+        {
+          "task": "PPC% Tracker \u2014 Felipe Feedback   Polish Sprints",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Practice as User 1 on EBFC AI Platform - Intake only and log VOC data and findings",
+          "who": "osito",
+          "points": 1
+        }
+      ],
+      "totals": {
+        "osito": 28,
+        "claude": 0,
+        "felipe": 0,
+        "together": 5,
+        "daily": 33
+      },
+      "notes": [
+        "Auto-created from Trello sync"
+      ]
+    },
+    {
+      "date": "2026-03-07",
+      "dayName": "Saturday",
+      "tasks": [
+        {
+          "task": "Updated cashflow charts on PBS",
+          "who": "claude",
+          "points": 1
+        },
+        {
+          "task": "Review: EBFC AI vs OpenClaw vs Accomplish \u2014 3-Way Competitive Analysis",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "Fresh Page for Osito \u2014 /fresh command   UX",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "EBFC AI Beta Launch \u2014 Google Chat Early Access",
+          "who": "osito",
+          "points": 1
+        },
+        {
+          "task": "EBFC AI Ship Day Sprint - Mar 7",
+          "who": "osito",
+          "points": 1
+        }
+      ],
+      "totals": {
+        "osito": 4,
+        "claude": 1,
+        "felipe": 0,
+        "together": 0,
+        "daily": 5
+      },
+      "notes": [
+        "Auto-created from Trello sync"
+      ]
+    }
+  ],
+  "weeklySummary": {
+    "weekOf": "2026-02-03",
+    "totalPoints": 116,
+    "lastUpdated": "2026-02-11"
+  }
+}
